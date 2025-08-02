@@ -1,0 +1,42 @@
+\documentclass[a4paper]{book}
+\usepackage{hyperref} 
+\usepackage{titlesec}
+\usepackage[table]{xcolor} % For coloring table rows
+\usepackage{array} % For better table formatting
+\usepackage{amsmath}
+\usepackage{todonotes}
+
+
+\usepackage{tocloft}
+\setcounter{tocdepth}{4}
+
+\begin{document}
+
+%table of contents
+\tableofcontents
+
+
+\include{robot}
+\include{from-data-to-information-theory}
+\include{action}
+\include{learning_in_robots}
+\include{models}
+\include{from-memory-to-remembering}
+\include{integrated-robotic-intelligence}
+\include{from-awareness-to-consciousness}
+\include{control_theory}
+\include{multi-robot-systems}
+\include{self}
+\include{collective-self}
+\include{language}
+\include{proposed-cognitive-dynamic-system}
+\include{experiments}
+
+
+% List todos
+\listoftodos
+% Bibliography
+\bibliographystyle{plain}
+\bibliography{refs} % Reference the BibTeX file here
+\end{document}
+        

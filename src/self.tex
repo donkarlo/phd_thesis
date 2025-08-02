@@ -1,0 +1,226 @@
+\usepackage{amsmath}\chapter{Self-awareness}
+\section{Self}
+In robotics, self is defined as the robot's ability to model, predict, and distinguish its own internal state, physical body, and actions from external influences. This "self" is achieved through mathematical models, sensor data, and computational processes.
+\section{Distinguishing Between Self and Non-Self in Robots}
+\subsection{Internal Models and Forward Models}
+Robots use \textbf{internal models} to predict the outcomes of their actions. By comparing predicted and observed outcomes, they can distinguish between self-generated actions and external influences.
+
+\textbf{Mathematical Formulation:}
+\begin{equation}
+\hat{x}_{t+1} = f(x_t, u_t)
+\end{equation}
+where:
+\begin{itemize}
+    \item \( \hat{x}_{t+1} \) is the predicted next state.
+    \item \( x_t \) is the current state.
+    \item \( u_t \) is the control input.
+    \item \( f \) is the internal model function.
+\end{itemize}
+The error between the predicted and observed states helps identify external disturbances:
+\begin{equation}
+\text{Error} = \| x_{\text{observed}} - \hat{x}_{t+1} \|
+\end{equation}
+
+\subsection{Artificial Immune System (AIS) Models}
+Inspired by biological immune systems, AIS models distinguish self from non-self through anomaly detection.
+
+\textbf{Mathematical Approach:}
+\begin{itemize}
+    \item Define a \textit{self-space} of normal behaviors.
+    \item Use the \textbf{Negative Selection Algorithm} to generate detectors for anomalies.
+\end{itemize}
+
+The affinity function measures the deviation of an observation from the self-space:
+\begin{equation}
+\text{Affinity} = \| x_{\text{observed}} - x_{\text{self}} \|
+\end{equation}
+
+\subsection{Dynamical Systems and Control Theory}
+Robots model their own dynamics and detect external forces (non-self) by analyzing deviations.
+
+\textbf{Dynamics Equation:}
+\begin{equation}
+\dot{x} = Ax + Bu + d
+\end{equation}
+where:
+\begin{itemize}
+    \item \( x \) is the state variable.
+    \item \( A, B \) are system matrices.
+    \item \( u \) is the control input.
+    \item \( d \) represents external disturbances.
+\end{itemize}
+Non-zero \( d \) indicates the presence of non-self influences.
+
+\subsection{Sensory-Motor Contingencies (SMCs)}
+SMCs describe the predictable relationship between motor actions and sensory outcomes. Self-generated actions produce expected sensory consequences.
+
+\textbf{Mathematical Representation:}
+\begin{equation}
+\hat{s}_{t+1} = g(s_t, a_t)
+\end{equation}
+where:
+\begin{itemize}
+    \item \( \hat{s}_{t+1} \) is the predicted sensory outcome.
+    \item \( s_t \) is the current sensory state.
+    \item \( a_t \) is the motor action.
+\end{itemize}
+Unpredictable sensory feedback indicates non-self behavior.
+
+\subsection{Machine Learning-Based Models}
+Machine learning models, such as autoencoders, detect deviations from learned self-behavior.
+
+\textbf{Autoencoder Reconstruction Error:}
+\begin{equation}
+\text{Reconstruction Error} = \| x_{\text{input}} - x_{\text{reconstructed}} \|
+\end{equation}
+A high reconstruction error signals non-self behavior.
+
+\subsection{Bayesian Inference Models}
+Bayesian models use probabilistic reasoning to classify observations as self or non-self.
+
+\textbf{Posterior Probability:}
+\begin{equation}
+P(\text{self} | \text{observation}) \propto P(\text{observation} | \text{self}) P(\text{self})
+\end{equation}
+Low posterior probability indicates non-self influences.
+
+\subsubsection{Summary Table of Models}
+
+\begin{tabular}{|l|p{6cm}|p{5cm}|}
+\hline
+\textbf{Model} & \textbf{Core Idea} & \textbf{Use Case} \\ \hline
+Internal Models & Predict outcomes and compare with observations. & Collision detection, motion verification. \\ \hline
+Artificial Immune Systems & Detect deviations from self-space. & Fault detection, anomaly recognition. \\ \hline
+Dynamical Systems & Analyze external forces in system dynamics. & Detecting external disturbances. \\ \hline
+Sensory-Motor Contingencies & Predict sensory outcomes of motor actions. & Body ownership, tool use. \\ \hline
+Machine Learning & Learn self-behavior and detect anomalies. & Anomaly detection, fault isolation. \\ \hline
+Bayesian Inference & Probabilistically classify self vs. non-self. & Uncertainty estimation, disturbance analysis. \\ \hline
+\end{tabular}
+
+\subsection{Questions}
+Is there a determined boundary between self and none-self?
+
+what is the definition of Self-modeling?
+
+if there are no external forces, then the robot can not distinguish between self and non-self
+    
+    
+    
+\section{Self-awareness}
+In robotics, self-awareness refers to a robot's ability to recognize, understand, and respond to its internal states and its role within its environment or a system. It involves functional awareness rather than subjective experience, enabling robots to monitor their own status, actions, and interactions with the external world. Self-awareness is a higher-order form of awareness. It refers to the ability to recognize oneself as an individual separate from the environment and others. Self-awareness involves not only perceiving external and internal states but also reflecting on them as being "one's own".
+    \begin{tabular}{|l|l|l|}
+        \hline
+        \textbf{Aspect}             & \textbf{Awareness}                              & \textbf{Self-Awareness}                          \\ \hline
+        \textbf{Definition}         & The ability to perceive and respond to stimuli. & The ability to reflect on oneself as distinct from the environment. \\ \hline
+        \textbf{Focus}              & External environment and internal states.       & Internal reflection and recognition of self.    \\ \hline
+        \textbf{Complexity}         & Basic and reactive.                             & Higher-order cognitive process.                 \\ \hline
+        \textbf{Recognition of Self}& Absent.                                         & Present (e.g., recognizing self in a mirror).   \\ \hline
+        \textbf{Example (Humans)}   & Hearing a sound and turning toward it.          & Realizing “I am nervous because of an upcoming test.” \\ \hline
+        \textbf{Example (Robots)}   & Detecting an obstacle and avoiding it.          & Recognizing that a movement or failure was caused by its own actions. \\ \hline
+        \textbf{Level of Cognition} & Low-level cognition or sensory processing.      & High-level cognition involving reflection and self-modeling. \\ \hline  
+    \end{tabular}
+    \begin{itemize}
+        \item Is it an agent's knowledge about its existence?
+        
+        \begin{itemize}
+            \item This boundary classifies between what and what?
+            \begin{itemize}
+                \item sensory readings and possible states
+                \item Are there a trainable and improvable models to classify between self and non-self?
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+    \subsection{Different levels of self-awareness}
+        \begin{tabular}{|l|l|l|l|}
+        \hline
+            \textbf{Level} & \textbf{Description} & \textbf{Examples in Humans} & \textbf{Examples in AI/Robots} \\ \hline
+            Zero-Level & No self-perception. & None. & Reflex-based systems. \\ \hline
+            Physical Self-Awareness & Recognizing one’s body and position. & Proprioception. & Collision avoidance in robots. \\ \hline
+            Situational Self-Awareness & Awareness of actions in context. & Adjusting behavior in traffic. & Path planning in environments. \\ \hline
+            Mirror Self-Awareness & Recognizing oneself in a reflection. & Seeing oneself in a mirror. & Basic visual recognition. \\ \hline
+            Extended Self-Awareness & Awareness of self across time. & Reflecting on events. & Tracking operational history. \\ \hline
+            Introspective Self-Awareness & Reflecting on thoughts and emotions. & Understanding desires. & Not achievable. \\ \hline
+            Social Self-Awareness & Awareness in social contexts. & Adapting to norms. & Sentiment-aware chatbots. \\ \hline
+            Meta-Self-Awareness & Awareness of awareness itself. & Pondering existence. & Not achievable. \\ \hline
+        \end{tabular}
+    \subsection{Aspects of self-awareness}
+    \begin{itemize}
+        \item Is self-awareness an ability or an illusion? 
+    \end{itemize}
+    \begin{itemize}
+        \item What is the most primitive or primary aspect of self-awareness? (link to staring at a picture)
+        \begin{itemize}
+            \item Is it the ability to draw a boundary between self and non-self? Is this possible at all? Is there a clear definite boundary between self and non-self?
+        \end{itemize}
+        \begin{itemize}
+            \item Does self-awareness exist without time? For example, if a robot stares at a painting and it only has an RGB camera, can it understand that it is alive?
+            \item remembering
+            \begin{itemize}
+                \item What is the definition of remembering?
+                \item How remembering is different with reviewing?
+                \item Is one aspect of self awareness is to detect more patterns or sub patterns when reviewing an experience?
+            \end{itemize}
+            \begin{itemize}
+                \item Is remembering alone enough to say that a robot is self-aware? 
+                \item Can an agent be self-aware without remembering? 
+                \item What is the definition of remembering? 
+                \item Is it only passing a set of sensory data through attention?
+                \item Is there a relation between language and remembering? For example do we remember better with a language?
+            \end{itemize}
+            \item Is attention an aspect of self-awareness? What is the definition of attention?
+        \end{itemize}
+    \end{itemize}
+    \begin{itemize}
+        \item Is self-awareness an ability? (what is the definition of an ability)
+        \item Is self-awareness improvable?
+        \item Is self-awareness a continuous feeling or it can be provoked whenever the agent wills to?
+        \item Agent's knowledge being able to do things further than its programmed goals is an aspect of self-awareness?
+        \item What is illusion? (Definition over sensory data and time)
+        \item Causality? Its relation with language
+    \end{itemize}
+    
+\subsection{Applications of self-awareness in robotics}
+\begin{itemize}
+    \item Does it make a difference wether a robot is self-aware? Maybe such meta knowledge is useless
+\end{itemize}
+
+\section{Self-modeling}
+\section{self-cognition} 
+% self-cognition is about the ability of a robot to think about itself, self-awareness is about the ability of an agent to perceive itself as an entity separate from the environment and recognize its own existence. for example distinguishing between robotic are and what it is holding or recognising itself in mirror. Self conciouness is the ability to reflect on oneself as an entity, including one’s thoughts, emotions, and existence over time.
+Self-cognition in robots refers to a robot's ability to reason about its own cognitive processes, knowledge, and limitations. It involves introspection, self-monitoring, and understanding how its decisions and actions are related to its internal models or knowledge.
+
+\begin{tabular}{|l|l|l|}
+        \hline
+        \textbf{Aspect}         & \textbf{Cognition}                                & \textbf{Self-Cognition}                             \\ \hline
+        \textbf{Definition}     & The ability to perceive, process, learn, and act on external inputs. & The ability to reason about its own cognitive processes, states, and limitations. \\ \hline
+        \textbf{Focus}          & Solving tasks, making decisions, and interacting with the environment. & Reflecting on its performance, knowledge, and cognitive processes. \\ \hline
+        \textbf{Complexity}     & Involves perception, learning, and reasoning.    & Involves self-monitoring, introspection, and meta-reasoning. \\ \hline
+        \textbf{Key Features}   & Decision-making, learning, and acting autonomously. & Error detection, self-modeling, confidence estimation, and self-correction. \\ \hline
+        \textbf{Examples}       & Identifying and picking an object.               & Recognizing it failed to pick an object and correcting the behavior. \\ \hline
+        \textbf{Role}           & Basic autonomous operation and task-solving.     & Enhancing adaptability, reliability, and performance. \\ \hline
+        \end{tabular}
+\section{Self-consciousness}
+
+\section{Difference between the three selves}
+    \begin{table}[h!]
+    \centering
+    \begin{tabular}{|l|l|l|}
+        \hline
+        \textbf{Concept}          
+            & \textbf{Definition}                                                      
+            & \textbf{Role of Self-Identification}                                \\ \hline
+        \textbf{Self-Awareness}    
+            & The ability to perceive oneself as distinct from the environment.    
+            & Fundamental: Recognizing one’s own body and actions.               \\ \hline
+        \textbf{Self-Cognition}    
+            & The ability to think about oneself, including internal states and goals.  
+            & Essential: Forming an internal model of one’s capabilities.        \\ \hline
+        \textbf{Self-Consciousness} 
+            & The ability to reflect on oneself as an entity with thoughts and emotions. 
+            & Supporting: Higher-level reasoning about oneself over time.        \\ \hline
+    \end{tabular}
+    \caption{Comparison of Self-Identification in Different Concepts}
+\end{table}
+
+\section{Todo}
+    \todo{In which category self-identification should be put? self-awareness? Self-cognition or self conciouness?}

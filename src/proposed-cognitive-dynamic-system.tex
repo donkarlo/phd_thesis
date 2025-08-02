@@ -1,0 +1,82 @@
+\chapter{Proposed cognitive dynamic system}
+Every human at each moment says were I am and were I will be in future?
+We just focus on this: 
+\begin{itemize}
+    \item Some sensory data from multiple data that have done something as a normal scenario to build initial knowledge. 
+    \item composing the data to build the spatio temporal model
+    \item in a novel scenario we build the new models for deviating parts of the new scenario
+\end{itemize}
+
+
+\section{Goals}
+
+
+\section{How to put proprioceptive and exteroceptive sensory data together}
+    \todo{Active, proprio-extro-proprio,check in regazoni paper}
+    
+    \todo{Passive, extero-proprio-extro}
+
+\section{Sensory data clustering}
+    \section{Clustering such as kmeans and then kmeans or VAE}
+
+\section{How to put sensory data or data chuncks from multiple robots together}
+
+\section{Preprocessing sensory data phase}
+    \todo{De-contextualizing sensory data for example from GPS} This is related to sensors absolute or related values. 
+    
+    \todo{Sensory data alignment} do not forget inetrpolation for low frequency sensory data
+
+    \subsection{Feature extraction}
+        \subsubsection{Manifold learning}
+
+\section{Offline training}
+    \subsection{Dimension reduction} PCA, PLS or VAE
+    \subsection{clustering}
+        \textbf{Why clustering}
+
+        \textbf{Clustering methods} Density based methods:DBSCAN
+            
+        
+        \todo{Is there a neural network method for clustering without defining number of clusters}
+        
+        \textbf{Clustering for partitioning the derivatives}
+
+    \subsection{Training temporal relations}
+        \subsubsection{Training between a sequence of 0 derivatives of a sensor and all derivatives of that sensor and other sensors}
+        \subsubsection{Hierarchical Transformers for Multi-Modal Learning}
+            Used in video, audio, and multi-modal fusion, where different levels of abstraction are needed.
+            Example: HAT (Hierarchical Attention Transformer) structures different levels of attention across modalities (text, image, speech).
+        
+
+    \subsection{Builiding a Spatio-temporal model}
+        We are looking for a solution which relies totally on neural networks that related
+        \begin{enumerate}
+            \item each dim reduced sensor cluster to its derivatives
+            \item Todo correlation analysis should be done to see which extro sensors are correlated with which pro sensor and even this study must be done between extro sensors and pro sensors too
+        \end{enumerate}
+        
+        \textbf{Conditional Temporal Networks (CTN)}
+
+        \textbf{LSTMs}
+
+        \textbf{Temporal Transformers}
+
+        \textbf{Time series transformers}
+
+        \textbf{Hierarchical transformers}
+
+        \textbf{Multimodal Transformers}
+        
+        \textbf{GANs ?}
+
+        \textbf{Application of attention mechanism}                                         
+
+\section{Online testing}
+    \textbf{According to current sensory readings in which class I am?}
+    
+    \textbf{For each class that I might be, how much is it possible for all states in it with probability}
+    
+    \subsection{Anomally detection}
+    
+    \subsection{Novelty detection}
+        \textbf{Using GANs for building the prediction in future}

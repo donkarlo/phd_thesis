@@ -1,0 +1,49 @@
+\chapter{Models}
+\section{Different models}
+\subsection{Classification Models}
+Classification models are designed to categorize input data into predefined classes by learning decision boundaries in the feature space. These models work by analyzing patterns in the training data and assigning new inputs to one of the learned categories. Common algorithms include decision trees, support vector machines, and neural networks. They are widely used in tasks like object recognition in computer vision, where an image is classified as "cat" or "dog," and anomaly detection, where unusual patterns in data are flagged. Their performance heavily depends on the quality and diversity of the training data. \cite{lecun-2015-deep-learning}
+    \subsubsection{Discriminative Models}
+Discriminative models focus on learning the decision boundary between classes by modeling the conditional probability of the output given the input. Unlike generative models, they do not attempt to model the entire data distribution, making them efficient for classification tasks. Examples include logistic regression, random forests, and discriminative neural networks. These models are used in applications like spam email detection, where the task is to classify emails as "spam" or "not spam," and medical diagnosis, where symptoms are mapped to diseases. They are favored for their accuracy and efficiency in prediction tasks. \cite{ng-2002-discriminative-generative}
+
+
+\subsection{Regression Models}
+Regression models predict continuous numerical values by capturing the relationships between input features and outputs. These models fit a function to the data points, minimizing the error between predicted and actual values. For instance, linear regression models establish linear relationships, while more complex techniques like polynomial regression or neural networks capture non-linear relationships. Applications include predicting house prices based on features like size and location, and estimating battery life in drones using flight parameters. Regression models are foundational in tasks requiring precise numerical estimations. \cite{hastie-2009-elements-statistical-learning}
+
+\subsection{Predictive Models}
+Predictive models forecast future outcomes by analyzing patterns in historical and present data. They use statistical methods or machine learning algorithms to make informed predictions. For example, a time series model might predict future stock prices by examining past trends, or trajectory prediction models estimate the future path of a drone based on current velocity and environmental data. Predictive models are critical in applications like weather forecasting, financial analysis, and autonomous navigation, where anticipating future states is essential for decision-making. \cite{bishop-2006-pattern-recognition}
+
+\subsection{Generative Models}
+Generative models learn the underlying distribution of training data to generate new, realistic data points. These models aim to capture the essence of the data, enabling tasks like image synthesis, text generation, and data augmentation. Popular examples include Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and diffusion models. For instance, GANs can generate high-resolution images of artificial objects, while VAEs can create realistic reconstructions of training data. Generative models are vital in applications like creating synthetic datasets for training or enhancing artistic creativity. \cite{goodfellow-2014-gan}
+
+
+
+\subsection{Hybrid Models}
+Hybrid models combine the strengths of generative and discriminative approaches to achieve improved accuracy and robustness. These models leverage generative methods to learn the underlying data distribution and discriminative techniques to optimize decision boundaries. For instance, a hybrid model might use a generative network to preprocess data and a discriminative network for classification. Applications include semi-supervised learning, where labeled and unlabeled data are combined, and robotics, where hybrid models can improve both perception and action planning. Hybrid models are particularly effective in tasks with limited labeled data. \cite{raina-2004-hybrid-models}
+
+\subsection{Probabilistic Models}
+Probabilistic models use principles of probability theory to represent uncertainty and make predictions. These models calculate the likelihood of outcomes given the input data, enabling robust decision-making in uncertain environments. Examples include Bayesian networks, which model probabilistic relationships among variables, and Hidden Markov Models (HMMs), used for sequential data analysis. In robotics, probabilistic models are essential for tasks like localization, where the robot estimates its position in an environment with uncertain sensor readings. These models excel in scenarios requiring explicit uncertainty quantification. \cite{pearl-1988-bayesian-networks}
+
+\subsection{Neural Models}
+Neural models are advanced machine learning architectures inspired by the human brain, designed for specific tasks through layers of artificial neurons. Convolutional Neural Networks (CNNs) excel at processing visual data, such as recognizing objects in drone imagery. Transformers, on the other hand, are specialized for sequence data and dominate tasks like natural language understanding and time-series analysis. These models are highly flexible, allowing applications in diverse fields, including robotics, where drones use CNNs for obstacle detection and transformers for mission planning based on sequential data. Neural models continue to evolve, shaping modern AI advancements. \cite{vaswani-2017-attention-transformers}
+
+
+
+
+
+
+\section{Pattern, pattern recognition models and anomalies}
+    \subsection{Pattern} A pattern in pattern recognition refers to a set of features or data points that represent some meaningful structure or regularity. It can be thought of as a recognizable arrangement or characteristic that distinguishes one set of data from another. Patterns are typically identified within raw data through various algorithms and methods. Two ways of representing patterns are:
+    \begin{itemize}
+        \item Feature vectors: Numerical representations of attributes (e.g., size, color, or frequency).
+        \item Graphs or sets: Representing relationships or groupings (e.g., network graphs).
+    \end{itemize}
+    \subsection{Model}
+    A model in pattern recognition is a mathematical framework that learns to identify or classify patterns from data. The model is built using algorithms trained on sample data from patterns and is then used to recognize patterns in new data.
+    \begin{itemize}
+        \item First pattern should be detected by a model so that anomaly becomes meaningful? What about statistical models that calculate the distance between two set of points?
+        \item Can a pattern be determined by one time experience?
+    \end{itemize}
+    \begin{itemize}
+        \item What is the difference between pattern recognition in sensory data and anomaly detection? Anomalies are realized from a model that distinguishes a pattern from a non-pattern
+        \item Should we expect any continuous anomaly over continuous time interval a model for pattern recognition?
+    \end{itemize}

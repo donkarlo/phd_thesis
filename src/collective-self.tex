@@ -1,0 +1,55 @@
+\chapter{Collective-self}
+
+\section{Social-awareness}
+    Social awareness refers to an robot's ability to recognize the presence, actions, and roles of other agents in its environment and adjust its behavior accordingly. It involves understanding that other agents are distinct entities with their own intentions and capabilities. In multi-robot systems (MRS), social awareness enables robots to coordinate actions, avoid conflicts, and engage in collaborative tasks. It is essential for human-robot interaction and team-based robotics, as it allows robots to interact meaningfully with humans and other robots by adapting to their actions and roles. \cite{fong-2003-socially-interactive-robots-survey}
+
+    Self-awareness is a prerequisite for social awareness because an agent must first understand itself before it can recognize and interact with others. Self-awareness involves identifying one’s own body, actions, and internal states, which is essential for distinguishing self-generated changes from external changes caused by other agents or the environment. Without this distinction, an agent would struggle to recognize which actions it is responsible for and which actions are caused by others, leading to confusion in social interactions. For a robot to adapt its behavior in response to another robot or human, it must first know its own capabilities and limitations. Therefore, social awareness builds upon self-awareness by extending the robot’s understanding from itself to its interactions with others, enabling effective coordination and cooperation in multi-agent systems.
+    \cite{groom-2007-self-awareness-in-human-robot-interaction}
+\section{Collective awareness}
+    Collective awareness refers to an robot's ability to understand that it is part of a group working toward a shared goal and to adjust its behavior to optimize the group's overall performance. It goes beyond recognizing individual agents to encompass an understanding of group dynamics, shared resources, and collective tasks. In MRS, collective awareness is crucial for tasks like swarm robotics, where robots need to coordinate without central control to achieve emergent behaviors that maximize group efficiency. This form of awareness allows robots to distribute tasks, avoid redundancies, and adapt to changes in the group’s composition. \cite{brambilla-2013-swarm-robotics-review}
+    
+    Social awareness is a prerequisite for collective awareness because recognizing individual agents and their roles is essential before understanding the group as a whole. Social awareness enables an agent to identify other agents, perceive their actions, and understand their goals and intentions. Without this ability to recognize and respond to individual interactions, an agent would be unable to coordinate tasks or participate in shared group goals. Collective awareness builds upon social awareness by requiring an agent to integrate its knowledge of individual agents into an understanding of group dynamics and shared objectives. Therefore, without first understanding who is part of the group and what each agent is doing, a robot cannot optimize group performance or contribute to collective success. \cite{brambilla-2013-swarm-robotics-review}
+    \begin{table}[h!]
+        \centering
+        \begin{tabular}{|l|l|l|}
+            \hline
+            \textbf{Aspect}              & \textbf{Social Awareness}                                      & \textbf{Collective Awareness}                                   \\ \hline
+            \textbf{Focus}               & Individual interactions                                        & Group-level understanding                                        \\ \hline
+            \textbf{Main Task}           & Recognizing other agents and their roles                       & Understanding shared goals and collective tasks                  \\ \hline
+            \textbf{Adaptation}          & Adapting to the actions of individual agents                   & Adapting to the needs of the group as a whole                    \\ \hline
+            \textbf{Example}             & Waiting for another robot to finish using a shared tool        & Adjusting search patterns based on the group’s coverage          \\ \hline
+            \textbf{Type of Awareness}   & Interpersonal awareness                                        & Group-level awareness                                            \\ \hline
+            \textbf{Relevance in MRS}    & Essential for avoiding conflicts and improving coordination     & Essential for achieving group efficiency and cooperation         \\ \hline
+        \end{tabular}
+        \caption{Comparison Between Social Awareness and Collective Awareness}
+    \end{table}
+
+\section{Social cognition}
+    Social cognition in multi-robot systems (MRS) refers to the ability of robots to understand and respond to individual agents’ actions, roles, and intentions. This involves recognizing other robots as distinct entities, predicting their behaviors, and adapting accordingly. Social cognition enables role recognition, conflict resolution, and collaboration in shared environments. For example, in a warehouse, robots use social cognition to avoid collisions by predicting each other’s paths and adjusting their trajectories. Inspired by human social cognition, this concept incorporates elements like theory of mind, which allows robots to infer the goals and intentions of others. Social learning is another critical aspect, enabling robots to learn new tasks by observing the actions of peers. Effective social cognition is essential for tasks that require close interaction between robots or between robots and humans. It also facilitates human-robot collaboration by allowing robots to adapt to human commands or gestures. However, implementing social cognition in robotics faces challenges like intention prediction and communication limitations. \cite{fong-2003-a-survey-of-socially-interactive-robots}
+
+
+
+\section{Collective cognition}
+    Collective cognition refers to the ability of a group of robots to process information collectively, make joint decisions, and adapt as a team to achieve shared goals. It goes beyond individual interactions to focus on the emergent group behavior that arises from decentralized coordination. In MRS, collective cognition is exemplified by swarm robotics, where robots collaboratively explore an environment or distribute tasks. Shared memory systems and distributed decision-making are fundamental elements of collective cognition, allowing robots to maintain a unified understanding of their environment. For instance, drones in a disaster zone use collective cognition to collectively map an area, ensuring coverage without redundancy. Collective cognition is driven by local interactions among robots, leading to global behaviors like efficient task allocation or cooperative transport. This concept is inspired by biological systems like ant colonies and bird flocks, where individuals follow simple rules to achieve complex group objectives. While collective cognition enables scalable and robust multi-robot systems, challenges like communication overhead and consensus mechanisms remain significant. \cite{brambilla-2013-swarm-robotics-a-review-from-the-swarm-intelligence-perspective}
+
+    
+
+
+\section{The role of anomaly detection in collective awareness, social awareness , collective cognition and }
+
+\section{self, others and self}
+    \textbf{Questions}
+    \begin{itemize}
+        \item Is the notion of being multiple true?
+        \item Does collective self-awareness exist?
+        \item How can two agents agree that they are talking about the same concept?
+        \item How does the presence of others help with self-awareness?
+        \item Is there really a difference between personal self-awareness and collective self-awareness?  
+            \begin{itemize}
+                \item What is the relation between pattern recognition and anomaly detection
+            \end{itemize}
+    \end{itemize}
+
+\section{Questions}
+    \todo{How do multiple robots know that they are working together?}
+    \todo{How does an MRS robots undetstand that they are different than another single or mrs?}

@@ -1,0 +1,79 @@
+\chapter{Collectiveness}
+
+
+
+\section{The difference between an MRS and SRS}
+    A system can be classified as a \textit{Multi-Robot System (MRS)} if it meets a set of necessary and sufficient conditions. These conditions ensure that the system involves multiple autonomous agents interacting and collaborating in a decentralized manner.
+    
+    \subsection{Necessary and Sufficient Conditions}
+    Combining the necessary and sufficient conditions, a system qualifies as an MRS if it meets the following criteria:
+    
+    \begin{enumerate}
+        \item The system must consist of two or more robots capable of independent decision-making and acting on their own. \cite{brambilla-2013-swarm-robotics-review}
+        \item The system must lack a centralized decision-maker, with control distributed across the robots. \cite{fong-2003-socially-interactive-robots-survey}
+        \item The robots must interact through communication or observation to achieve shared goals. \cite{laird-2012-soar-cognitive-architecture}
+        \item The system must distribute tasks across multiple robots, with each robot contributing to the mission. \cite{tenorth-2013-knowrob-knowledge-processing-infrastructure}
+        \item The robots must be able to learn independently and adapt to their environment and each other. \cite{hawkins-2004-on-intelligence}
+        \item There must be mechanisms for coordinating tasks, negotiating roles, or sharing information. \cite{graves-2014-neural-turing-machines}
+    \end{enumerate}
+
+\section{Different multi robot systems}
+    
+    \textbf{Heterogeneous MRS}
+    
+    \textbf{Homogeneous MRS}
+
+    \textbf{Swarms} \todo{How to choose who are your neighbors?}
+
+    \textbf{Swarmnoids}
+
+    \todo{Are there more categories?}
+
+\section{Different forms of relationship between multiple robots}
+
+    \textbf{Cooperation} refers to collaborative interaction between robots to achieve a common goal that is difficult or impossible to achieve individually. In cooperative scenarios, robots share information, resources, and tasks to improve efficiency. For instance, robots in search and rescue missions can cover larger areas by cooperating, thus increasing the chances of finding victims faster. Cooperation requires task allocation, seamless communication, and synchronization of actions. \cite{parker-2008-distributed-intelligence-in-multi-robot-systems}
+    
+    \textbf{Coordination} focuses on synchronizing the actions of multiple robots to avoid conflicts and optimize resource usage. Coordination ensures that robots operating in the same environment do not interfere with each other’s tasks. For example, in warehouse automation, robots coordinate their movements to avoid collisions while picking and delivering items. Effective coordination mechanisms are essential to prevent resource conflicts and ensure scalability in large robot fleets. \cite{berman-2009-coordination-multiple-mobile-robots}
+    
+    \textbf{Competition} arises when robots compete for limited resources or tasks. This adversarial interaction is common in game-theoretic approaches where each robot tries to maximize its individual performance. For instance, in robot soccer, teams of robots compete to score goals while blocking opponents. Market-based task allocation systems also incorporate competition, where robots bid for tasks, and the most efficient robot wins the task. \cite{stone-2001-multi-agent-systems-survey}
+    
+    \textbf{Collaboration} is a higher-level form of cooperation where robots adapt their behavior dynamically to work together toward a shared goal. Collaboration requires cognitive capabilities, such as reasoning and decision-making, to adjust strategies based on the environment. For instance, robots collaborating in construction tasks adjust their roles in real-time based on progress and obstacles. Collaborative robots can also work alongside humans in manufacturing plants by adapting to human actions. \cite{breazeal-2019-collaborative-robots-human-aware-interaction}
+    
+    \textbf{Swarm Behavior} refers to emergent collective behavior in multi-robot systems that is inspired by biological systems such as ant colonies and bee swarms. In swarm robotics, each robot follows simple local rules, and complex global behavior emerges without central control. This approach is particularly useful in tasks like environmental monitoring and foraging, where robots spread out to cover large areas efficiently. Swarm behavior is robust and scalable but requires careful design of local interaction rules. \cite{brambilla-2013-swarm-robotics-review}
+    
+    \textbf{Negotiation} occurs when robots interact to resolve conflicts or agree on task assignments. In negotiation, robots exchange proposals and counterproposals until they reach a mutually acceptable agreement. This type of interaction is crucial in resource-constrained environments, where robots need to negotiate access to limited charging stations or task priorities. Effective negotiation protocols ensure fairness and optimize task allocation in multi-robot teams. \cite{jennings-2001-automated-negotiation-challenges}
+    
+    \textbf{Role Assignment} focuses on assigning specific roles or tasks to different robots based on their capabilities and the task requirements. Role assignment ensures efficiency and task specialization in complex multi-robot systems. For example, in search and rescue missions, one robot might focus on mapping the area while another searches for victims. Dynamic role assignment allows robots to switch roles based on changing conditions and task demands. \cite{gerkey-2004-task-allocation-multi-robot-systems}
+    
+    \textbf{Social Interaction} involves robots engaging in meaningful communication with humans or other robots in a socially appropriate way. This type of interaction is essential for human-robot collaboration in areas like healthcare and customer service. Social robots are designed to recognize social norms and respond to human emotions appropriately. They use verbal and non-verbal cues to enhance interaction quality and build trust with users. \cite{fong-2003-socially-interactive-robots-survey}
+
+
+
+
+
+\section{Collective learning techniques in robots}
+    \textbf{Centralized learning}
+
+    \textbf{Decentralized learning}
+
+    \textbf{Hybrid learning}
+    
+    \textbf{Cooperative Imitation Learning/Multi-Agent Imitation Learning}
+
+
+\section{Communication}
+
+\section{Scalability}
+
+\section{Anomaly detection in MRS}
+
+\section{Question}
+    \todo{What is Coalition making?}
+    \todo{Consensus building}
+    \todo{Flocking}
+    \todo{Distributed cognition}
+    \todo{What is swarm intelligence and how does it apply to robots?}
+    \todo{Are there relationships between sociology and MRS?}
+    \todo{What are different forms of consensus making in an MRS?}
+    \todo{Language grounding in MRS}
+   
