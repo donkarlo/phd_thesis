@@ -1,0 +1,102 @@
+\chapter{From Awareness to Consciousness}
+\section{(Sensory) Data} Data refers to raw, unprocessed facts or measurements that lack context or interpretation. It is the basic building block for deriving meaning but does not convey any significance on its own.
+
+\section{Awareness}
+Awareness refers to the ability to perceive, sense, or be conscious of one’s surroundings, internal states, or external stimuli. It is a fundamental cognitive capability that allows an entity (human, animal, or even machine) to respond to changes in its environment or internal state.
+
+Does awareness need sensors? For example a robot with all disconnected sensors by only reviewing its memory patterns is aware? Does the literature support internal and external awareness?
+
+
+
+
+\section{Intelligence}  is the ability to learn, reason, adapt, and solve problems. It includes applying knowledge to achieve goals. What is the most basic form of intelligence?
+
+
+
+\section{Cognition}
+refers to the processes of acquiring, processing, storing, and using information. It includes perception, memory, reasoning, decision-making, problem-solving, and learning. Cognition in robots is artificial and computational. It involves algorithms and models that enable perception, learning, and decision-making. A cognitive robot integrates sensors, learning systems, reasoning mechanisms, and actuators to perceive, understand, adapt, and interact effectively with its environment. The cognitive architecture ties these components together, allowing the robot to exhibit intelligent and adaptive behavior akin to human cognition but without subjective awareness. Here are the components of a cognitive robot:
+    \begin{tabular}{|l|l|l|}
+        \hline
+        \textbf{Component} & \textbf{Purpose} & \textbf{Examples} \\ \hline
+        \textbf{Sensors} & Collect data from the environment. & Cameras, LiDAR, microphones, touch sensors. \\ \hline
+        \textbf{Perception System} & Process and interpret sensor data. & Object detection, SLAM, speech recognition. \\ \hline
+        \textbf{Memory and Knowledge} & Store past experiences and learned data. & Semantic graphs, long-term memory. \\ \hline
+        \textbf{Learning System} & Learn and adapt from experience. & Reinforcement learning, supervised learning. \\ \hline
+        \textbf{Decision-Making} & Make optimal choices for actions. & Path planning, probabilistic reasoning. \\ \hline
+        \textbf{Actuators and Motion} & Execute physical actions. & Motors, robotic arms, motion planners. \\ \hline
+        \textbf{Communication} & Interact with humans or systems. & NLP, gesture recognition, HRI frameworks. \\ \hline
+        \textbf{Feedback and Adaptation} & Improve behavior using feedback. & Error correction, real-time adaptation. \\ \hline
+        \textbf{Cognitive Architectures} & Integrate all components cohesively. & SOAR, ACT-R, ROS, BICA. \\ \hline
+        \textbf{Ethics and Safety Systems} & Ensure safe and ethical operation. & Collision avoidance, failsafe mechanisms. \\ \hline
+    \end{tabular}
+
+
+
+    \subsection{Cognitive model} \href{https://en.wikipedia.org/wiki/Cognitive_model#Dynamical_systems}{url}
+        Cognitive model is a computational or theoretical framework that describes and simulates cognitive processes (e.g., perception, attention, memory, reasoning, and decision-making).
+        \begin{itemize}
+            \item mental model: A mental model is a cognitive representation or internal simulation that individuals form to understand, predict, and interact with the world around them. It allows people to reason about how things work and to solve problems. A mental model is a subset of a broader cognitive model. Mental models describe an individual's internal understanding, while cognitive models explain the processes that lead to this understanding.
+        \end{itemize}
+    \subsection {Dynamic cognitive systems and robots}
+
+    \subsection{Cognitive architectures}
+        \textbf{Cognitive Architectures:} Cognitive architectures are computational frameworks that model and simulate the structures and processes underlying human cognition. They provide a unified framework for integrating components like memory, reasoning, perception, and learning to mimic human-like intelligence. By organizing cognitive processes into modular structures, these architectures enable the study of general cognitive abilities and their application in artificial systems. Many cognitive architectures also emphasize the interaction between symbolic and sub-symbolic processes, ensuring adaptability in dynamic environments. Their development bridges theoretical cognitive science and practical artificial intelligence research. 
+
+        \subsubsection{Review Papers on Cognitive Architectures:}
+
+            \textbf{"A Review of 40 Years of Cognitive Architecture Research: Core Cognitive Abilities and Practical Applications"} by Iuliia Kotseruba and John K. Tsotsos provides an extensive overview of cognitive architecture research, discussing core cognitive abilities and various applications. 
+
+            \textbf{"Progress and Challenges in Research on Cognitive Architectures"} by Pat Langley reviews the notion of cognitive architectures and recurring themes in their study, highlighting both advancements and ongoing challenges in the field. 
+
+            \textbf{"Cognitive Architectures and Autonomy: A Comparative Review"} by Kristinn R. Thórisson and Thórhallur E. Rögnvaldsson examines systems and architectures designed to address integrated skills, discussing principles and features that contribute to autonomy in intelligent systems. 
+
+
+
+        \subsubsection{Most famous cognitive architectures}
+            \textbf{ACT-R:} ACT-R (Adaptive Control of Thought-Rational) is a cognitive architecture designed to simulate human cognitive processes. It integrates declarative and procedural memory, enabling systems to retrieve relevant information based on pattern-matching mechanisms. For instance, in robotics, ACT-R is applied to model human-like reasoning and memory retrieval during tasks such as human-robot interactions. This architecture emphasizes modularity, allowing cognitive processes like memory recall and learning to be closely aligned with human cognition. 
+
+            \textbf{Soar:} Soar is a cognitive architecture that focuses on learning, problem-solving, and decision-making by using long-term memory retrieval. It enables agents to recall stored plans or strategies when encountering tasks similar to past experiences. In robotics, Soar facilitates navigation and adaptive behaviors by retrieving relevant memory traces during dynamic problem-solving. Its ability to learn from past outcomes makes it a robust framework for modeling cognitive flexibility in artificial systems. 
+
+            \textbf{CLARION:} CLARION (Connectionist Learning with Adaptive Rule Induction ON-line) is a hybrid cognitive architecture combining symbolic reasoning with sub-symbolic neural processes. This architecture supports memory retrieval by associating high-level rules with underlying distributed representations. In robotic systems, CLARION is particularly useful for integrating reasoning and action, such as adapting to new environments based on learned associations and generalizations. Its dual-process approach ensures flexibility and robustness in memory-dependent tasks. 
+
+            \textbf{LIDA:} LIDA (Learning Intelligent Decision Agent) is a biologically inspired cognitive architecture that emphasizes cognitive cycles and attention mechanisms. It models human-like perception, decision-making, and learning through its multiple memory systems, including sensory, episodic, and procedural memory. LIDA has been applied in multi-robot systems to enable distributed decision-making and collaborative learning, making it well-suited for dynamic and adaptive environments. 
+
+            \textbf{OpenCog:} OpenCog is an open-source cognitive architecture aimed at achieving artificial general intelligence (AGI). It uses knowledge graphs and probabilistic reasoning to represent and process complex knowledge structures. In multi-robot systems, OpenCog enables collaborative reasoning and shared decision-making, allowing robots to collectively solve tasks by leveraging distributed knowledge. 
+
+            \textbf{SPAUN:} SPAUN (Semantic Pointer Architecture Unified Network) is a large-scale brain-inspired model that simulates cognitive processes such as visual recognition, decision-making, and learning. It uses spiking neural networks to perform various tasks, making it particularly useful for simulating human-like cognitive behaviors in robotic systems. 
+
+            \textbf{NARS:} NARS (Non-Axiomatic Reasoning System) is a cognitive architecture designed for reasoning and decision-making under uncertainty. It adapts to changing environments by continuously learning from incomplete and dynamic knowledge. NARS has been employed in real-time robotics, where adaptive and flexible reasoning is critical. 
+
+            \textbf{BECCA:} BECCA (Brain-Emulating Cognition and Control Architecture) focuses on unsupervised learning and adaptive control by mimicking biological learning processes. It enables robots to autonomously adapt to new tasks and environments, making it suitable for applications requiring continuous learning and behavioral flexibility. 
+
+            \begin{table}[h!]
+                \centering
+                \begin{tabular}{|l|l|l|l|}
+                    \hline
+                    \textbf{Cognitive Architecture} & \textbf{Type} & \textbf{Key Feature} & \textbf{Application in Robotics} \\ \hline
+                    ACT-R & Symbolic & Human-like reasoning and memory retrieval & Human-robot interaction  \\ \hline
+                    Soar & Symbolic & Problem-solving and decision-making & Adaptive navigation  \\ \hline
+                    CLARION & Hybrid & Combines symbolic reasoning with subsymbolic learning & Dynamic adaptation  \\ \hline
+                    LIDA & Hybrid & Cognitive cycles and distributed learning & Distributed decision-making  \\ \hline
+                    OpenCog & Subsymbolic & Knowledge graphs and probabilistic reasoning & Collaborative reasoning  \\ \hline
+                    SPAUN & Neuromorphic & Brain-inspired spiking neural network & Cognitive task simulation  \\ \hline
+                    NARS & Subsymbolic & Adaptive reasoning under uncertainty & Real-time decision-making  \\ \hline
+                    BECCA & Neuromorphic & Unsupervised learning and adaptive control & Adaptive control in robotics  \\ \hline
+                \end{tabular}
+                \caption{Summary of Cognitive Architectures for Robotics}
+            \end{table}
+
+
+
+
+    \subsection{Embodied Cognition}
+        \todo{Embodied agent}
+
+    \subsection{Attention}
+        % I checked attention is a part of cognition
+        \todo{Write about attention as a cognition ability}
+
+
+
+\section{Consciousness} is the state of being aware of one’s existence, thoughts, surroundings, and self. It involves subjective experience and introspection. It is a level higher than awareness and in most literature is claimed to be not reachable by robots. Consequently, self-consciousness is also a level higher than self-awareness. A robot can never experience what a burn feel likes.
+% \todo{check this paper:  \url{https://www.researchgate.net/publication/360659133_Robots_and_Machine_Consciousness}}

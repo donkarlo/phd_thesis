@@ -3,33 +3,33 @@ This chapter explores unifying frameworks that integrate perception, action, and
 
 \section{Overview of Frameworks}
     \subsection{Reinforcement Learning and Hierarchical Extensions}
-    Reinforcement Learning (RL) provides a framework for robots to learn through interaction with their environment, optimizing cumulative rewards. Hierarchical Reinforcement Learning (HRL) extends RL by decomposing tasks into manageable subtasks, simplifying the learning process. For example, a humanoid robot tasked with cleaning a room can use HRL to break the task into locating objects, picking them up, and organizing them. Drones applying RL optimize flight paths to maximize coverage while minimizing energy usage. \cite{sutton-2018-reinforcement-learning} \cite{barto-2003-hierarchical}
-    
-    \subsection{Sensorimotor and Embodied Intelligence Frameworks}
-    Sensorimotor learning focuses on coupling sensory input and motor output, enabling robots to refine actions based on feedback. Embodied intelligence expands this by emphasizing the robot's physical interaction with the environment. For instance, a soft robot navigating uneven terrain adjusts its movements based on tactile feedback, demonstrating the integration of physical and sensory adaptation. These frameworks are essential for tasks like grasping, balancing, and navigating complex terrains. \cite{argall-2009-imitation-learning} \cite{pfeifer-2007-embodied-intelligence}
+    Reinforcement Learning (RL) provides a framework for robots to learn through interaction with their environment, optimizing cumulative rewards. Hierarchical Reinforcement Learning (HRL) extends RL by decomposing tasks into manageable subtasks, simplifying the learning process. For example, a humanoid robot tasked with cleaning a room can use HRL to break the task into locating objects, picking them up, and organizing them. Drones applying RL optimize flight paths to maximize coverage while minimizing energy usage.  
 
-        
+    \subsection{Sensorimotor and Embodied Intelligence Frameworks}
+    Sensorimotor learning focuses on coupling sensory input and motor output, enabling robots to refine actions based on feedback. Embodied intelligence expands this by emphasizing the robot's physical interaction with the environment. For instance, a soft robot navigating uneven terrain adjusts its movements based on tactile feedback, demonstrating the integration of physical and sensory adaptation. These frameworks are essential for tasks like grasping, balancing, and navigating complex terrains.  
+
+
     \subsection{Bayesian Brain and Active Inference}
-    The Bayesian brain framework and active inference approach integrate perception, action, and learning through generative models that minimize prediction errors. Robots continuously update their beliefs and act to reduce discrepancies between predictions and observations. For example, a self-navigating robot adjusts its trajectory based on predicted and observed movements of nearby objects. This framework provides a robust basis for autonomous adaptation. \cite{friston-2010-free-energy}
-    
+    The Bayesian brain framework and active inference approach integrate perception, action, and learning through generative models that minimize prediction errors. Robots continuously update their beliefs and act to reduce discrepancies between predictions and observations. For example, a self-navigating robot adjusts its trajectory based on predicted and observed movements of nearby objects. This framework provides a robust basis for autonomous adaptation. 
+
     \subsection{Damasio’s Emotional and Embodied Cognition}
-    Antonio Damasio's work highlights the role of emotions and bodily states in guiding reasoning and decision-making. The somatic marker hypothesis suggests that emotions derived from bodily signals can inform intelligent behavior in uncertain scenarios. Robots inspired by this framework simulate emotional reasoning to enhance human-robot interaction and decision-making, such as adapting responses based on perceived human emotions. \cite{damasio-1994-descartes-error}
-    
+    Antonio Damasio's work highlights the role of emotions and bodily states in guiding reasoning and decision-making. The somatic marker hypothesis suggests that emotions derived from bodily signals can inform intelligent behavior in uncertain scenarios. Robots inspired by this framework simulate emotional reasoning to enhance human-robot interaction and decision-making, such as adapting responses based on perceived human emotions. 
+
     \subsection{Haykin’s Cognitive Dynamic Systems}
-    Simon Haykin’s cognitive dynamic systems integrate neural networks, signal processing, and real-time adaptation to address uncertainty and noise in dynamic environments. Applications include multi-agent communication and adaptive control, where robots dynamically adjust behavior based on environmental conditions. For example, drones utilize Haykin’s principles for decentralized communication and navigation in complex terrains. \cite{haykin-2012-cognitive-dynamic-systems}
-    
+    Simon Haykin’s cognitive dynamic systems integrate neural networks, signal processing, and real-time adaptation to address uncertainty and noise in dynamic environments. Applications include multi-agent communication and adaptive control, where robots dynamically adjust behavior based on environmental conditions. For example, drones utilize Haykin’s principles for decentralized communication and navigation in complex terrains. 
+
     \subsection{End-to-End Deep Learning Frameworks}
-    End-to-end deep learning frameworks map raw sensory inputs directly to motor outputs using deep neural networks. This approach eliminates the need for intermediate modules, enabling tasks like autonomous driving and robotic navigation. For instance, drones process video feeds in real time to navigate complex environments. \cite{lecun-2015-deep-learning}
-    
+    End-to-end deep learning frameworks map raw sensory inputs directly to motor outputs using deep neural networks. This approach eliminates the need for intermediate modules, enabling tasks like autonomous driving and robotic navigation. For instance, drones process video feeds in real time to navigate complex environments. 
+
     \subsection{Neuro-Symbolic Integration Frameworks}
-    Neuro-symbolic frameworks combine neural networks for perception with symbolic reasoning for decision-making. Robots using these frameworks recognize objects and follow logical rules to complete tasks. For instance, a robot assembling a mechanical part uses neural vision for identification and symbolic reasoning for correct assembly. \cite{garcez-2019-neuro-symbolic}
-    
+    Neuro-symbolic frameworks combine neural networks for perception with symbolic reasoning for decision-making. Robots using these frameworks recognize objects and follow logical rules to complete tasks. For instance, a robot assembling a mechanical part uses neural vision for identification and symbolic reasoning for correct assembly. 
+
     \subsection{Predictive Coding Frameworks}
-    Predictive coding minimizes discrepancies between predicted and observed sensory inputs by continuously updating internal models. This framework enables robots to act proactively and adapt dynamically. For example, a balancing robot anticipates shifts in its center of gravity and adjusts its posture to maintain stability. \cite{rao-1999-predictive-coding}
-    
+    Predictive coding minimizes discrepancies between predicted and observed sensory inputs by continuously updating internal models. This framework enables robots to act proactively and adapt dynamically. For example, a balancing robot anticipates shifts in its center of gravity and adjusts its posture to maintain stability. 
+
     \subsection{Multi-Agent Reinforcement Learning (MARL)}
-    Multi-Agent Reinforcement Learning (MARL) extends RL to scenarios involving multiple robots collaborating or competing to achieve goals. For example, a swarm of drones collaboratively mapping a disaster area uses MARL to share data and optimize coverage while avoiding overlaps or collisions. This framework integrates shared observations, policy optimization, and coordinated actions. \cite{busoniu-2008-marl}
-    
+    Multi-Agent Reinforcement Learning (MARL) extends RL to scenarios involving multiple robots collaborating or competing to achieve goals. For example, a swarm of drones collaboratively mapping a disaster area uses MARL to share data and optimize coverage while avoiding overlaps or collisions. This framework integrates shared observations, policy optimization, and coordinated actions. 
+
     \subsection{Integration of Frameworks}
     While each framework contributes uniquely, their integration can lead to more robust and versatile robotic systems. For instance, predictive coding can enhance neuro-symbolic reasoning by providing anticipatory models, while embodied intelligence can ground deep learning models in real-world physical interactions. Exploring synergies among these frameworks opens new avenues for research in unified robotic intelligence.
 
