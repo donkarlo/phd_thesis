@@ -3,7 +3,8 @@
 \usepackage{titlesec}
 \usepackage[table]{xcolor} % For coloring table rows
 \usepackage{array} % For better table formatting
-\usepackage{todonotes}
+% Color the entries in the list of todos; remove the option if you don't need it
+\usepackage[colorinlistoftodos]{todonotes}
 \setcounter{tocdepth}{4}
 \usepackage{amsmath}
 
@@ -14,13 +15,15 @@
 \tableofcontents
 
 \include{introduction}
-\include{goal}
+\include{thesis_goal}
 The review part is to gather all existing knowledge
 \include{review/robot/robot}
+\include{review/robot/goal}
 \include{review/robot/from-data-to-information-theory}
 \include{review/robot/actuator}
 \include{review/robot/learning_in_robots}
 \include{review/robot/machine-learning-models}
+\include{review/robot/mind}
 \include{review/robot/memory}
 \include{review/robot/integrated-robotic-intelligence}
 \include{review/robot/from-awareness-to-consciousness}
