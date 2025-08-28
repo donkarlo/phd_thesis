@@ -2,84 +2,156 @@
 
 What is alphabet? "Edmund Husserl" says that "Sound is Awareness" Thomas Nagel has explored the concept of aural awareness in his philosophical discussions in his paper "What is it like to be a bat?"
 
-    \section{language relations}
-        Linguistic relations (syntagmatic \& paradigmatic)
-        \begin{itemize}
-            \item Paradigmatic / Relation de substitution
-            \item Syntagmatic / Relation de combinaison
-        \end{itemize}
+\section{History}
 
-    \section{Communication emergence in MRS}
+\section{Formation process}
+    \subsection{My thoughts}
+        
+        \paragraph{Development}
+            
+            \begin{figure}[H]
+                \raggedright
+                \begin{tikzpicture}[
+                    >=Stealth,
+                    every node/.style={
+                        draw,
+                        rectangle,
+                        align=center,
+                        inner sep=3pt
+                        }]
+                    \graph [
+                        layered layout,
+                        grow=down,
+                        level distance=16mm,
+                        edges={-Stealth},
+                        ]
+                        {
+                            "Snesory data" -> "Abstraction \\ Clustering" -> "Inner speech"-> "Concensus with others";
+                        };
+                \end{tikzpicture}
+            \end{figure}
+            
+        \paragraph{Entities}
+            
+            \begin{figure}[H]
+                    \raggedright
+                    \begin{tikzpicture}[
+                        >=Stealth,
+                        every node/.style={
+                            draw,
+                            rectangle,
+                            align=center,
+                            inner sep=3pt
+                        }]
+                        \graph [
+                            layered layout,
+                            grow=down,
+                            level distance=16mm,
+                            edges={-Stealth},
+                        ]
+                        {
+                            "Words" -> "Number of alphabets \\ needed according to the found words"
+                        };
+                    \end{tikzpicture}
+            \end{figure}
+            
+        
+        
+    
+\section{Structure}
+    \subsection{My thoughts}
+        \begin{figure}[h]
+            \centering
+            \begin{tikzpicture}[
+                >=Stealth,
+                every node/.style=mainnode]
+                % the main graph
+                \graph[
+                    layered layout,
+                    grow=down,
+                    level distance=16mm,
+                    sibling distance=25mm,
+                ]{
+                    lan/"language" -> alph/"alphabet";
+                    lan -> word/"word";
+                };
+            \end{tikzpicture}
+            \caption{Layered graph with external auto-stacked comment boxes.}
+        \end{figure}
 
-    \section{Inner speech}
-        \textbf{The importance of inner speech in self-awareness} \todo{Check this paper: \url{https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2020.00016/full}}
+\section{language relations}
+    Linguistic relations (syntagmatic \& paradigmatic)
+    \begin{itemize}
+        \item Paradigmatic / Relation de substitution
+        \item Syntagmatic / Relation de combinaison
+    \end{itemize}
 
-    \section{Language grounding with mutual presence and sensing the same concept or object at the same time}
+\section{Communication emergence in MRS}
 
-    \section{Language grounding by comparing pattern in the mind}
-    %this is just possible for machines in human it must be described
+\section{Inner speech}
+    \textbf{The importance of inner speech in self-awareness} \todo{Check this paper: \url{https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2020.00016/full}}
 
-    \section{Concept composition}
-        \todo{build corner, straight,  build left and associate turn left or straight left }
+\section{Language grounding with mutual presence and sensing the same concept or object at the same time}
 
-    \section{Formation and refinement}
-        \textbf{Formation}
+\section{Language grounding by comparing pattern in the mind}
+%this is just possible for machines in human it must be described
 
-        \textbf{Refinement} Everytime an experience is repeated the language must become more granular
+\section{Concept composition}
+    \todo{build corner, straight,  build left and associate turn left or straight left }
 
+\section{Formation and refinement}
+    \textbf{Formation}
 
-
-
-
-
-
+    \textbf{Refinement} Everytime an experience is repeated the language must become more granular
+    
 \section{My thoughts}
-    first find the words by clustering. then
-    \begin{itemize}
-        \item noun: is a cluster over the boundries of 0th derivative
-            \begin{itemize}
-                \item adjective: decription of the noun such as intensity
-            \end{itemize}
-        \item verb: is relied to actuators and commands. clustring over the first derivative. bverb must move the nouns in front of sensors of the robot
-            \begin{itemize}
-                \item adverb: decription of the verb such as intensity
-            \end{itemize}
-    \end{itemize}
+first find the words by clustering. then
+\begin{itemize}
+    \item noun: is a cluster over the boundries of 0th derivative
+        \begin{itemize}
+            \item adjective: decription of the noun such as intensity
+        \end{itemize}
+    \item verb: is relied to actuators and commands. clustring over the first derivative. bverb must move the nouns in front of sensors of the robot
+        \begin{itemize}
+            \item adverb: decription of the verb such as intensity
+        \end{itemize}
+\end{itemize}
 
-    \paragraph{Language formation phases}
-    First an internal language is developed then by a signalling system one robot tries to check if another robot has approximately found the same cluster. if it doesnt find then the word dies in the robot.
+\paragraph{Language formation phases}
+First an internal language is developed then by a signalling system one robot tries to check if another robot has approximately found the same cluster. if it doesnt find then the word dies in the robot.
+
 \section{Todo}
-    \paragraph{Formation idea}
-        each robot  forms clusters and relatation but has only one communication channel such as a red light that can create morse code so that another robot in vicinity can see it. this blinking red light can be simulated by a channel in which a rebot emmits signals to simulate
+\paragraph{Formation idea}
+    each robot  forms clusters and relatation but has only one communication channel such as a red light that can create morse code so that another robot in vicinity can see it. this blinking red light can be simulated by a channel in which a rebot emmits signals to simulate
 
-    \paragraph{Gradually}
-        language and its entitity form gradually, but how could this be implemented or modeled?
+\paragraph{Gradually}
+    language and its entitity form gradually, but how could this be implemented or modeled?
 
-    \todo{Language grounding methods in robots}
+\todo{Language grounding methods in robots}
 
-    \begin{itemize}
-        \item Did first word existed or alphabet? I think word.
-        \item "time passage" is not a repeated pattern, then how can a word be corresponded to it?
-        \item Should a self-aware robot talk to itself?
-        \item Does talking to self needs another agent?
-        \item Is abnormality detection over a continuous time interval a word or an alphabet?
-        \item Can robot make sense of a word or a sentence without having experience it?
-        \item When should a robot consider a set of ordered alphabets as a meaningful word?
-        \item When does a robot consider a set of ordered words as a sentence?
-        \item Can a robot build meaningful language structures that it knows will never occur in the real world for any agent? words such as beautiful, ugly, god
-        \item Maybe emotional words can be built by growth rate or first derivative.
-        \item Does the alphabet have anything to do with different levels of derivative as growth rates?
-        \item Is one aspect of language to build future probable meaningful structures?
-        \item What is the definition of structure?
-        \item Does a human, before saying something to another, say it to himself?
-        \item Is keeping accidental composition of words or alphabets in mind to continuously assess their meaningfulness an aspect?
-        \item what about two opposite words or sentences?
-        \item Is there a knowledge in the reality in alphabets we don't have opposite or similarity concepts?
-        \item Can neuro-symbolic AI be related to self-awareness? \href{https://en.wikipedia.org/wiki/Neuro-symbolic_AI}{url}
-        \item Thinking of robots thinking dependency to the programming language that builds it and machine learning methods it uses.
-        \item There must be a relation between an optimal discovered language in a robot and a good programming labguage
-        \item Define Optimal for an emergent language in a robot
-            \begin{itemize}
-                \item Is being optimal equals forming a language that uses its hierarchy and Janeshini and jaygozini methods it detects anomaly better
-            \end{itemize}
-    \end{itemize}
+\begin{itemize}
+    \item Did first word existed or alphabet? I think word.
+    \item "time passage" is not a repeated pattern, then how can a word be corresponded to it?
+    \item Should a self-aware robot talk to itself?
+    \item Does talking to self needs another agent?
+    \item Is abnormality detection over a continuous time interval a word or an alphabet?
+    \item Can robot make sense of a word or a sentence without having experience it?
+    \item When should a robot consider a set of ordered alphabets as a meaningful word?
+    \item When does a robot consider a set of ordered words as a sentence?
+    \item Can a robot build meaningful language structures that it knows will never occur in the real world for any agent? words such as beautiful, ugly, god
+    \item Maybe emotional words can be built by growth rate or first derivative.
+    \item Does the alphabet have anything to do with different levels of derivative as growth rates?
+    \item Is one aspect of language to build future probable meaningful structures?
+    \item What is the definition of structure?
+    \item Does a human, before saying something to another, say it to himself?
+    \item Is keeping accidental composition of words or alphabets in mind to continuously assess their meaningfulness an aspect?
+    \item what about two opposite words or sentences?
+    \item Is there a knowledge in the reality in alphabets we don't have opposite or similarity concepts?
+    \item Can neuro-symbolic AI be related to self-awareness? \href{https://en.wikipedia.org/wiki/Neuro-symbolic_AI}{url}
+    \item Thinking of robots thinking dependency to the programming language that builds it and machine learning methods it uses.
+    \item There must be a relation between an optimal discovered language in a robot and a good programming labguage
+    \item Define Optimal for an emergent language in a robot
+        \begin{itemize}
+            \item Is being optimal equals forming a language that uses its hierarchy and Janeshini and jaygozini methods it detects anomaly better
+        \end{itemize}
+\end{itemize}

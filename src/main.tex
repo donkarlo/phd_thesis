@@ -1,14 +1,48 @@
-\documentclass[a4paper]{book}
+\documentclass{book}
+
+% ======================
+% Packages (load after \documentclass)
+% ======================
 \usepackage{hyperref}
 \usepackage{titlesec}
-\usepackage[table]{xcolor} % For coloring table rows
-\usepackage{array} % For better table formatting
-% Color the entries in the list of todos; remove the option if you don't need it
+\usepackage[table]{xcolor}   % table row/col coloring
+\usepackage{array}            % better tables
 \usepackage[colorinlistoftodos]{todonotes}
 \setcounter{tocdepth}{4}
 \usepackage{amsmath}
 
-% commands
+
+% Graphics
+\usepackage{tikz}
+\definecolor{mainfill}{HTML}{FFF2CC}
+\definecolor{mainborder}{HTML}{D6B656}
+\tikzset{
+    mainnode/.style={
+        draw=mainborder,
+        fill=mainfill,
+        rectangle,
+        align=center,
+        inner sep=5pt,
+        rounded corners,
+        line width=0.8pt,
+        text=black,
+    }
+}
+%% fit is for process I think
+\usetikzlibrary{graphs,graphdrawing,arrows.meta,mindmap,fit,positioning}
+\usegdlibrary{layered,force}
+
+%% For hierarchical trees
+\usepackage[edges]{forest}
+
+%% Enforce non-floating placement with [H]
+\usepackage{float}
+\usepackage{caption}
+%% moves all figure captions to right
+\captionsetup{singlelinecheck=false}
+
+
+% Convenience macro for clickable file paths (you already had this)
 \newcommand{\filepath}[1]{\href{file://#1}{\path{#1}}}
 
 \begin{document}
@@ -43,4 +77,3 @@ The proposed part is to describe the proposed solution
 \bibliographystyle{plain}
 \bibliography{refs} % Reference the BibTeX file here
 \end{document}
-        
