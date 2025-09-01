@@ -17,13 +17,34 @@
         \texttt{/workspace}
 
 \section{Linux Virtual environment}
-    \textbf{dir}: \texttt{~/phd\_venv}
-
-    \textbf{activating in terminal}: source \texttt{~/phd-venv/bin/activate}
-
-    \textbf{deactivating}: deactivate
-
-    \paragraph{Interpreterin Pycharm} To set the interpreter virtual environment go to: \texttt{~}/phd\_venv/bin and choose python and not python 3.13 or other
+    Creating the virtual environment
+    \begin{minted}{shell}
+        python -m venv ~/phd-v
+    \end{minted}
+    
+    To activate
+    \begin{minted}{shell}
+        source ~/phd-venv/bin/activate
+    \end{minted}
+    
+    To deactivate
+    \begin{minted}{shell}
+        deactivate
+    \end{minted}
+    
+    
+    
+    \paragraph{Installing Test environment}
+        Pytest is used for testing
+        \begin{minted}{shell}
+            pip install -U pytest pytest-cov pytest-xdist
+        \end{minted}
+    
+    
+    
+    
+    \subsection{Pycharm}
+        \paragraph{Interpreterin Pycharm} To set the interpreter virtual environment go to: \texttt{~}/phd\_venv/bin and choose python and not python 3.13 or other
 
 
 \section{scenarios}

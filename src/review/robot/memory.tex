@@ -1,4 +1,4 @@
-\chapter{From memory to Remembering}
+\chapter{Memory}
 
 \section{Memory architecure}
 Regarding any architecture about memory the following information are important:
@@ -13,7 +13,7 @@ Regarding any architecture about memory the following information are important:
     \subsection{Storage}
 
     \subsection{Forgetting}
-        \subsubsection{Usage of Forgetting}
+        \subsubsection{Applications of Forgetting}
         Forgetting is not merely a failure of memory; it is a functional process essential for efficient cognitive performance \cite{hardt-2013-decay-happens}.
         The human brain receives vast amounts of sensory and conceptual information daily.
         Retaining all of it would overload neural storage and impair the retrieval of relevant memories .
@@ -57,27 +57,29 @@ Regarding any architecture about memory the following information are important:
 
 
 
-\section{Memory Architectures for Robots}
-    \textbf{Episodic Memory} refers to the ability of robots to store specific events, including contextual information like time, place, and sensory details. This type of memory is crucial for tasks requiring robots to recall past experiences and apply them to future interactions. For instance, a robot equipped with episodic memory can remember previous locations it visited or interactions with specific humans, which helps improve navigation or social behavior. The CRAM cognitive architecture integrates episodic memory for everyday task execution in human environments, allowing robots to adapt to new scenarios by recalling past experiences. 
+    \subsection{Memory Architectures for Robots}
+        \textbf{Episodic Memory} refers to the ability of robots to store specific events, including contextual information like time, place, and sensory details. This type of memory is crucial for tasks requiring robots to recall past experiences and apply them to future interactions. For instance, a robot equipped with episodic memory can remember previous locations it visited or interactions with specific humans, which helps improve navigation or social behavior. The CRAM cognitive architecture integrates episodic memory for everyday task execution in human environments, allowing robots to adapt to new scenarios by recalling past experiences.
+    
+        \textbf{Semantic Memory} stores general knowledge about the world, such as object properties, relationships, and actions. Unlike episodic memory, it is not tied to specific experiences but rather to facts and concepts. Robots use semantic memory to recognize objects and understand their functions. This type of memory is essential for language grounding, as robots can associate words with objects and actions. The OpenCog framework implements semantic memory by building knowledge graphs that robots can access to reason about the world.
+    
+        \textbf{Working Memory} functions as a short-term memory system that temporarily holds information for immediate processing. It allows robots to keep track of ongoing tasks, manage goals, and adapt to dynamic environments. For example, a robot performing a multi-step task can use working memory to remember intermediate steps and adjust its behavior based on real-time feedback. The ACT-R cognitive architecture incorporates working memory to enable robots to perform complex tasks that require simultaneous handling of multiple pieces of information.
+    
+        \textbf{Procedural Memory} stores knowledge of how to perform tasks and actions, enabling robots to execute learned skills without conscious recall. This memory type is critical for repetitive tasks, such as industrial robots performing assembly line tasks or humanoid robots learning to walk. Procedural memory is built through reinforcement learning or imitation learning, where the robot refines its motor skills through trial and error. The ROS-TM system, for instance, implements procedural memory to automate robot tasks based on previously learned actions.
+    
+        \textbf{Associative Memory} allows robots to link different pieces of information through learned associations. This type of memory is crucial for pattern recognition, decision-making, and adaptive behavior. Associative memory helps robots recognize objects or situations based on partial information by recalling previous associations between sensory inputs and outcomes. The Neural Turing Machine is a notable implementation of associative memory that enables robots to learn and recall complex sequences and relationships between data points.
+    
+        \textbf{Long-Term Memory} refers to the permanent storage of knowledge and experiences. Robots use long-term memory to recall information over extended periods, which is essential for personalized interactions and knowledge retention. For example, a customer service robot with long-term memory can remember user preferences and interactions to provide more tailored responses. The Soar cognitive architecture incorporates long-term memory to store symbolic knowledge and use it for problem-solving and reasoning.
+    
+        \textbf{Hierarchical Temporal Memory (HTM)} is a memory model inspired by the structure of the neocortex. HTM focuses on learning spatial and temporal patterns in sensory data, allowing robots to predict future events based on past experiences. It is particularly useful for tasks that require the robot to process sequences, such as speech recognition, predictive maintenance, and motion prediction. The Numenta HTM framework has been applied in various robotic applications to enhance predictive capabilities.
 
-    \textbf{Semantic Memory} stores general knowledge about the world, such as object properties, relationships, and actions. Unlike episodic memory, it is not tied to specific experiences but rather to facts and concepts. Robots use semantic memory to recognize objects and understand their functions. This type of memory is essential for language grounding, as robots can associate words with objects and actions. The OpenCog framework implements semantic memory by building knowledge graphs that robots can access to reason about the world. 
-
-    \textbf{Working Memory} functions as a short-term memory system that temporarily holds information for immediate processing. It allows robots to keep track of ongoing tasks, manage goals, and adapt to dynamic environments. For example, a robot performing a multi-step task can use working memory to remember intermediate steps and adjust its behavior based on real-time feedback. The ACT-R cognitive architecture incorporates working memory to enable robots to perform complex tasks that require simultaneous handling of multiple pieces of information. 
-
-    \textbf{Procedural Memory} stores knowledge of how to perform tasks and actions, enabling robots to execute learned skills without conscious recall. This memory type is critical for repetitive tasks, such as industrial robots performing assembly line tasks or humanoid robots learning to walk. Procedural memory is built through reinforcement learning or imitation learning, where the robot refines its motor skills through trial and error. The ROS-TM system, for instance, implements procedural memory to automate robot tasks based on previously learned actions. 
-
-    \textbf{Associative Memory} allows robots to link different pieces of information through learned associations. This type of memory is crucial for pattern recognition, decision-making, and adaptive behavior. Associative memory helps robots recognize objects or situations based on partial information by recalling previous associations between sensory inputs and outcomes. The Neural Turing Machine is a notable implementation of associative memory that enables robots to learn and recall complex sequences and relationships between data points. 
-
-    \textbf{Long-Term Memory} refers to the permanent storage of knowledge and experiences. Robots use long-term memory to recall information over extended periods, which is essential for personalized interactions and knowledge retention. For example, a customer service robot with long-term memory can remember user preferences and interactions to provide more tailored responses. The Soar cognitive architecture incorporates long-term memory to store symbolic knowledge and use it for problem-solving and reasoning. 
-
-    \textbf{Hierarchical Temporal Memory (HTM)} is a memory model inspired by the structure of the neocortex. HTM focuses on learning spatial and temporal patterns in sensory data, allowing robots to predict future events based on past experiences. It is particularly useful for tasks that require the robot to process sequences, such as speech recognition, predictive maintenance, and motion prediction. The Numenta HTM framework has been applied in various robotic applications to enhance predictive capabilities. 
 
 
-
-\section{Remembering and recalling}
-    The terms \textit{remembering} and \textit{recalling} are closely related but differ in nuance, particularly in the context of robotics and artificial systems. Remembering refers to the general process of retrieving stored information, whether it is triggered actively or occurs spontaneously. It encompasses a broad range of memory activities, including implicit and explicit retrieval mechanisms. Recalling, on the other hand, specifically highlights the deliberate and task-oriented act of retrieving particular information from memory. For instance, a robot remembering involves the spontaneous recognition of a previously encountered environment, while recalling might involve actively retrieving a stored navigation strategy to solve a specific task. These distinctions are essential when designing cognitive architectures or memory systems in robotics to differentiate between general memory access and targeted retrieval operations .
-
-    Remembering can occur through two primary mechanisms: (1) from current sensory observations and (2) through internally triggered processes. Both mechanisms are essential for forming, retrieving, and utilizing memories in both natural and artificial systems.
+\section{Remembering}
+    \paragraph{Remebering}
+        Remembering refers to the general process of retrieving stored information, whether it is triggered actively or occurs spontaneously. It encompasses a broad range of memory activities, including implicit and explicit retrieval mechanisms. 
+        
+    \paragraph{Recalling}
+     Recalling highlights the deliberate and task-oriented act of retrieving particular information from memory. For instance, a robot remembering involves the spontaneous recognition of a previously encountered environment, while recalling might involve actively retrieving a stored navigation strategy to solve a specific task. These distinctions are essential when designing cognitive architectures or memory systems in robotics to differentiate between general memory access and targeted retrieval operations .
 
     Remembering can occur through two primary mechanisms: (1) from current sensory observations and (2) through internally triggered processes. Both mechanisms are essential for forming, retrieving, and utilizing memories in both natural and artificial systems.
 
@@ -114,7 +116,7 @@ Regarding any architecture about memory the following information are important:
         \textbf{Metacognition and Self-Reflection:} Metacognitive systems retrieve memories based on self-evaluation, enabling the adjustment of strategies or correction of errors. For example, a robot analyzing a failed task might recall relevant past experiences to improve its approach. This self-reflective capability fosters long-term autonomy and adaptability. 
 
 
-
+\section{Collective memory}
 
 
 
