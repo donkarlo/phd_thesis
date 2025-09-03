@@ -33,51 +33,24 @@ What is alphabet? "Edmund Husserl" says that "Sound is Awareness" Thomas Nagel h
             
         \paragraph{Entities}
             
-            \begin{figure}[H]
-                    \raggedright
-                    \begin{tikzpicture}[
-                        >=Stealth,
-                        every node/.style={
-                            draw,
-                            rectangle,
-                            align=center,
-                            inner sep=3pt
-                        }]
-                        \graph [
-                            layered layout,
-                            grow=down,
-                            level distance=16mm,
-                            edges={-Stealth},
-                        ]
-                        {
-                            "Words" -> "Number of alphabets \\ needed according to the found words"
-                        };
-                    \end{tikzpicture}
-            \end{figure}
+            words and alphabets and sentences and larger parts
             
         
         
     
 \section{Structure}
-    \subsection{My thoughts}
-        \begin{figure}[h]
-            \centering
-            \begin{tikzpicture}[
-                >=Stealth,
-                every node/.style=mainnode]
-                % the main graph
-                \graph[
-                    layered layout,
-                    grow=down,
-                    level distance=16mm,
-                    sibling distance=25mm,
-                ]{
-                    lan/"language" -> alph/"alphabet";
-                    lan -> word/"word";
-                };
-            \end{tikzpicture}
-            \caption{Layered graph with external auto-stacked comment boxes.}
-        \end{figure}
+    \subsection{alphabet}
+    \subsection{words or dictionary}
+        First words are formed
+        
+        the length of the words are related to their usage frequency. The more they are needed the less lengthy they must be
+        
+        We need a new words for each detected anomally
+        
+    \subsection{Composite structures}
+    
+    
+    
 
 \section{language relations}
     Linguistic relations (syntagmatic \& paradigmatic)
@@ -120,14 +93,17 @@ first find the words by clustering. then
 \paragraph{Language formation phases}
 First an internal language is developed then by a signalling system one robot tries to check if another robot has approximately found the same cluster. if it doesnt find then the word dies in the robot.
 
+\section{Anomaly detection}
+Whenever an anomally is higher than what it should be probably based on the 3 sigma rule, then its time to create new language compositions. for example a word or a sentence.
+
+
 \section{Todo}
-\paragraph{Formation idea}
-    each robot  forms clusters and relatation but has only one communication channel such as a red light that can create morse code so that another robot in vicinity can see it. this blinking red light can be simulated by a channel in which a rebot emmits signals to simulate
+    \paragraph{Formation idea}
+        each robot  forms clusters and relatation but has only one communication channel such as a red light that can create morse code so that another robot in vicinity can see it. this blinking red light can be simulated by a channel in which a rebot emmits signals to simulate
+    
+    \paragraph{Gradually}
+        language and its entitity form gradually, but how could this be implemented or modeled?
 
-\paragraph{Gradually}
-    language and its entitity form gradually, but how could this be implemented or modeled?
-
-\todo{Language grounding methods in robots}
 
 \begin{itemize}
     \item what is descriprtion?

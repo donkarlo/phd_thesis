@@ -12,63 +12,44 @@
     \subsection{ROS}
     \subsection{Mavlink}
     \subsection{Mavros}
-        \texttt{/mrs]\_workspace}
+        \texttt{/mrs\_workspace}
         \texttt{/catkin\_ws}
         \texttt{/workspace}
 
 \section{Linux Virtual environment}
     Creating the virtual environment
     \begin{minted}{shell}
-        python -m venv ~/phd-v
+        python -m venv ~/phd-venv
     \end{minted}
-    
-    To activate
-    \begin{minted}{shell}
-        source ~/phd-venv/bin/activate
-    \end{minted}
-    
-    To deactivate
-    \begin{minted}{shell}
-        deactivate
-    \end{minted}
-    
-    
-    
     \paragraph{Installing Test environment}
         Pytest is used for testing
         \begin{minted}{shell}
             pip install -U pytest pytest-cov pytest-xdist
         \end{minted}
-    
-    
-    
-    
-    \subsection{Pycharm}
-        \paragraph{Interpreterin Pycharm} To set the interpreter virtual environment go to: \texttt{~}/phd\_venv/bin and choose python and not python 3.13 or other
 
-
-\section{scenarios}
-    \subsection{Normal}
-        \begin{itemize}
-            \item \textbf{Drones:}
-                \begin{itemize}
-                    \item \textbf{Num}: 2
-                    \item \textbf{Type}: TarotT650
-                        \begin{itemize}
-                            \item sensors
-                                \begin{itemize}
-                                    \item GPS odom
-                                    \item RP A2 LIDAR
-                                \end{itemize}
-                        \end{itemize}
-                \end{itemize}
-            \item \textbf{Yaml file:}:
-                \begin{itemize}
-                    \item \textbf{path}: \filepath{/home/donkarlo/Dropbox/projs/research/data/self-aware-drones/ctumrs/two-drones/normal-scenario/uav1-gps-lidar-uav2-gps-lidar.yaml}
-                    \item \textbf{number of lines}: 34902346
-                    \item \textbf{Number of yaml documents}: 1041927
-                \end{itemize}
-        \end{itemize}
+\section{Experiments}
+    \subsection{scenarios}
+        \subsubsection{Normal}
+            \begin{itemize}
+                \item \textbf{Drones:}
+                    \begin{itemize}
+                        \item \textbf{Num}: 2
+                        \item \textbf{Type}: TarotT650
+                            \begin{itemize}
+                                \item sensors
+                                    \begin{itemize}
+                                        \item GPS odom
+                                        \item RP A2 LIDAR
+                                    \end{itemize}
+                            \end{itemize}
+                    \end{itemize}
+                \item \textbf{Yaml file:}:
+                    \begin{itemize}
+                        \item \textbf{path}: \filepath{/home/donkarlo/Dropbox/projs/research/data/self-aware-drones/ctumrs/two-drones/normal-scenario/uav1-gps-lidar-uav2-gps-lidar.yaml}
+                        \item \textbf{number of lines}: 34902346
+                        \item \textbf{Number of yaml documents}: 1041927
+                    \end{itemize}
+            \end{itemize}
 
 
 \section{Todo}
