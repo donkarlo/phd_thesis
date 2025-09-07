@@ -1,5 +1,51 @@
-\chapter{Cognitive dynamic robots}
+\chapter{Robots}
 A robot is a programmable, multifunctional machine designed to perform tasks by sensing its environment, processing information, and taking action either autonomously or semi-autonomously.
+
+
+
+\section{Sensors}
+    \subsection{IMU}
+        IMUs come with 6 axis or 9 axis. 6 axis includes accelerometer and gyroscope and 9 axis also includes magnometer
+        
+        \subsubsection{Accelometer}
+            To measure the x,y,z acceleration
+        
+        \subsubsection{Giroscope}
+            to measure rotational rate, eitrher (roll, yaw, pitch) or quaternion
+        
+        \subsubsection{Magnetometer}
+            It measures earth magnetic field. the output is a threed number
+        
+        \subsubsection{GPS}
+        
+        \subsubsection{LIDAR}
+        
+\section{Perception-Planning-Control loop}
+    It is also called sense-plan-act
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\linewidth]{/home/donkarlo/repo/phd_thesis/figs/sense_plan_act}
+        \label{fig:my_png}
+    \end{figure}
+    
+    \subsection{Perception}
+        Perception has four layers
+        \subsubsection{Sensing}
+            Raw sensory data
+        \subsubsection{Preprocessing}
+        \subsubsection{Odometry and then State estimation}
+            Odometry is the process of estimating a robot’s change in position (translation) and orientation (rotation) over time, using motion sensors.
+        \subsubsection{Localication and mapping}
+            \paragraph{SLAM}
+                stands for simultanious localization and mapping. This is very related to self-awareness in a robot.
+                    \subparagraph{Output}
+                    SLAM output is  something like an ocuupancy grid
+    
+    \subsection{Planning}
+        \paragraph{Goal} Goal is an input to planning
+    \subsection{Control}
+        Executes motor commands to follow the planned trajectory
+            
 
 \section{Action-Goal}
     A robot perform a set of actions to achieve a (set of) goals
@@ -48,9 +94,6 @@ The main components of a robot can be divided into five essential categories:
         \textbf{Concinnous robots}
         Probably never achievable. Pain must reduce computation resources in robot.They probably can never answer the question "What burning feels like" from recognized patterns in their in sensory data in their memory. Another aspect of pain might be messiness of words or meanings as sensory patterns in their memory.
 
-
-
-\section{Different goals}
 \section{Feedback system}
 
 \section{Control theory}
@@ -67,13 +110,67 @@ The main components of a robot can be divided into five essential categories:
         \begin{itemize}
             \item Is relating current sensor data with previous control inputs to solve problem a kind of state estimation?
         \end{itemize}
+    
+\section{Goal}
+    \paragraph{Homestatis and survival}
+        Somehow must prove that without having a surviavl goal self aware ness is not possible
+        
+        The survival final goal is the only effort that turns a robots attention to itself.
+        
+        Obeying the human ruler is one surviavl skill because the human ruler may kill the robot
 
-\section{Signal processing}
-    \subsection{Questions:}
-        \begin{itemize}
-            \item Are there pre-defined goals in intelligent agents?
-            \item feedback system
-            \item Should a robot have a model that relates current sensory data with control inputs?
-        \end{itemize}
+
+        
 \section{Simulation}
-    \input{review/robot/ros}
+    \subsection{ROS ecosystem}
+    
+    
+    \subsection{ROS}
+    
+    
+    \subsection{MAVROS}
+    A layer over ROS
+    
+    
+    \subsection{MAVLink}
+    The language to establish communication between
+    \begin{itemize}
+        \item QGroundControl and (MAVROS-MAVLink)
+        \item (MAVROS-MAVLink) and (Autopilot)
+    \end{itemize}
+    
+    
+    \subsection{QGround Control}
+    
+    
+    \subsection{Flight controller}
+    The hardware board that usually containes
+    \begin{itemize}
+        \item IMU
+        \item barometer
+        \item GPS
+        \item microcontroller/CPU
+        \item I/O ports
+    \end{itemize}
+    
+    Here are sime examples
+    \begin{itemize}
+        \item Pixhawk
+        \item Cube orange
+        \item Holybro
+    \end{itemize}
+    
+    
+    \subsection{Autopilot}
+    The software
+    
+    \subsubsection{PX4}
+    
+    \subsubsection{PX4mini}
+    
+    \subsubsection{Ardupilot}
+    
+\section{Quadcopter}
+    \subsection{Homeostatis}
+    This could be considered as the final goal of a robot. Even a robot which follows its human master, it is better to be regarded as something that follows its master orders in order not to be destroyed by it
+    This will be very intresting. A flying quadcopter is very prone to crashing. That is why it is a very good subject for self-awarness studies
