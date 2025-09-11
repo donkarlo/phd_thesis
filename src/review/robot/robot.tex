@@ -20,15 +20,15 @@ A robot is a programmable, multifunctional machine designed to perform tasks by 
         
         \subsubsection{LIDAR}
         
-\section{Perception-Planning-Control loop}
-    It is also called sense-plan-act
+\section{Sense Plan Action loop}
+    It is also called Perception-Planning-Control
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.8\linewidth]{/home/donkarlo/repo/phd_thesis/figs/sense_plan_act}
         \label{fig:my_png}
     \end{figure}
     
-    \subsection{Perception}
+    \subsection{Sense}
         Perception has four layers
         \subsubsection{Sensing}
             Raw sensory data
@@ -41,9 +41,9 @@ A robot is a programmable, multifunctional machine designed to perform tasks by 
                     \subparagraph{Output}
                     SLAM output is  something like an ocuupancy grid
     
-    \subsection{Planning}
+    \subsection{Plan}
         \paragraph{Goal} Goal is an input to planning
-    \subsection{Control}
+    \subsection{Action}
         Executes motor commands to follow the planned trajectory
             
 
@@ -112,6 +112,7 @@ The main components of a robot can be divided into five essential categories:
         \end{itemize}
     
 \section{Goal}
+    \todo{This part must go under sense-plan-action cycle}
     \paragraph{Homestatis and survival}
         Somehow must prove that without having a surviavl goal self aware ness is not possible
         
