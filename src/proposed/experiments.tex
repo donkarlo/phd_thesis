@@ -41,7 +41,24 @@
         \end{minted}
 
 \section{Experiments}
-    \subsection{scenarios}
+    \subsection{Sensors}
+        \begin{table}[H]
+            \centering
+            \caption{Message frequency statistics for UAV~1 topics}
+            \label{tab:freq_stats}
+            \begin{adjustbox}{max width=\textwidth}
+                \begin{tabular}{lrrrrrrr}
+                    \toprule
+                    \textbf{Topic name}      & \textbf{Message count} & \textbf{$t_{\min}$ (s)} & \textbf{$t_{\max}$ (s)} & \textbf{Avg. rate (Hz\_span)} & \textbf{Median rate (Hz\_med)} & \textbf{$dt$ [min,max] (s)} & \textbf{Bad dt count} \\
+                    \midrule
+                    /uav1/odometry/odom\_gps & 434065                 & 6881.668                & 11226.756               & 98.93                         & 125.00                         & [0.004, 0.056]              & 4224                  \\
+                    /uav1/rplidar/scan       & 86901                  & 6881.704                & 11226.700               & 20.00                         & 20.83                          & [0.024, 0.072]              & 0                     \\
+                    \bottomrule
+                \end{tabular}
+            \end{adjustbox}
+        \end{table}
+
+\subsection{scenarios}
         \subsubsection{Normal}
             \begin{itemize}
                 \item \textbf{Drones:}
