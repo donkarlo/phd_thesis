@@ -1,28 +1,48 @@
 \documentclass{book}
 
-% ======================
-% Packages (load after \documentclass)
-% ======================
-\usepackage{hyperref}
+% ----- Packages loaded before hyperref -----
 \usepackage{titlesec}
-\usepackage[table]{xcolor}   % table row/col coloring
-\usepackage{array}            % better tables
+\usepackage[table]{xcolor}
+\usepackage{array}
 \usepackage[colorinlistoftodos]{todonotes}
-\setcounter{tocdepth}{4}
 \usepackage{amsmath}
 \usepackage{graphicx}
 
-
 % Graphics
 \usepackage{tikz}
+\usetikzlibrary{graphs,graphdrawing,arrows.meta,mindmap,fit,positioning}
+\usegdlibrary{layered,force}
 
-%%to use svg images
+% SVG
 \usepackage{svg}
 
-%tables
+% Tables
 \usepackage{booktabs}
 \usepackage{adjustbox}
-%%
+
+% Forest
+\usepackage[edges]{forest}
+
+% Floats and captions
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{singlelinecheck=false}
+
+% Minted (needs -shell-escape)
+\usepackage{minted}
+\usemintedstyle{friendly}
+\setminted{
+    fontsize=\small,
+    linenos,
+    breaklines,
+    frame=single,
+    tabsize=4,
+    autogobble,
+}
+\setminted[python]{fontsize=\footnotesize}
+\newcommand{\pyl}[1]{\mintinline{python}{#1}}
+
+% Colors and tikz styles (can stay here)
 \definecolor{mainfill}{HTML}{FFF2CC}
 \definecolor{mainborder}{HTML}{D6B656}
 \tikzset{
@@ -37,36 +57,27 @@
         text=black,
     }
 }
-%% fit is for process I think
-\usetikzlibrary{graphs,graphdrawing,arrows.meta,mindmap,fit,positioning}
-\usegdlibrary{layered,force}
 
-%% For hierarchical trees
-\usepackage[edges]{forest}
+% Depths
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
 
-%% Enforce non-floating placement with [H]
-\usepackage{float}
-\usepackage{caption}
-%% moves all figure captions to right
-\captionsetup{singlelinecheck=false}
+% ---- Load hyperref LAST (then bookmark, optional) ----
+\usepackage[unicode]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=black,
+    pdfstartview=FitH,
+    bookmarksopen=true,
+    bookmarksnumbered=true
+}
+% bookmarks
+\usepackage{bookmark}
 
-
-% Convenience macro for clickable file paths (you already had this)
+% Convenience macro
 \newcommand{\filepath}[1]{\href{file://#1}{\path{#1}}}
 
-% This part is for another and better form code highlighting
-\usepackage{minted}
-\usemintedstyle{friendly}
-%%setting for all syntaxes
-\setminted{
-    fontsize=\small,
-    linenos,
-    breaklines,
-    frame=single,
-    tabsize=4,
-    autogobble,
-}
-%% if you want something special for python
-\setminted[python]{fontsize=\footnotesize}
-%% a short form for minted python inline
-\newcommand{\pyl}[1]{\mintinline{python}{#1}}
+% loading pdf
+\usepackage{pdfpages}
