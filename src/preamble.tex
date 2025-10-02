@@ -6,15 +6,24 @@
 \usepackage{array}
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage{amsmath}
-\usepackage{graphicx}
+
 
 % Graphics
+\newcommand{\figspath}{/home/donkarlo/Dropbox/repo/phd_thesis/figs/}
+
+%% Tikz
 \usepackage{tikz}
 \usetikzlibrary{graphs,graphdrawing,arrows.meta,mindmap,fit,positioning}
 \usegdlibrary{layered,force}
 
-% SVG
+%% images
+\usepackage{graphicx}
+\graphicspath{{/home/donkarlo/Dropbox/repo/language_learning_project/figs/}}
+%% SVG
 \usepackage{svg}
+
+%%pdf
+\usepackage{pdfpages}
 
 % Tables
 \usepackage{booktabs}
@@ -79,5 +88,4 @@
 % Convenience macro
 \newcommand{\filepath}[1]{\href{file://#1}{\path{#1}}}
 
-% loading pdf
-\usepackage{pdfpages}
+
