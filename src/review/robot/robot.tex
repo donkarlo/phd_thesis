@@ -1,5 +1,5 @@
 \chapter{Robots}
-A robot is a programmable, multifunctional machine designed to perform tasks by sensing its environment, processing information, and taking action either autonomously or semi-autonomously.
+A robot is a programmable, multifunctional machine designed to perform missions by sense its environment, processing information, and taking action either autonomously or semi-autonomously.
 
 
 
@@ -42,16 +42,16 @@ A robot is a programmable, multifunctional machine designed to perform tasks by 
                     SLAM output is  something like an ocuupancy grid
     
     \subsection{Plan}
-        \paragraph{Goal} Goal is an input to planning
+        \paragraph{Mission} Mission is an input to plan
     \subsection{Action}
         Executes motor commands to follow the planned trajectory
             
 
-\section{Action-Goal}
-    A robot perform a set of actions to achieve a (set of) goals
+\section{Action-Mission}
+    A robot perform a set of actions to achieve a (set of) missions
     \paragraph{Action}
-        Action is an assesable long running tasks such as goto point (x,y,z). Mavlink defines actions.
-    \paragraph{Goal}
+        Action is an assesable long running missions such as goto point (x,y,z). Mavlink defines actions.
+    \paragraph{Mission}
         A pose in which a robot should try to achieve
     \paragraph{Commands}
         instructions sent to actuators such as increase rotation speed of rotor 3 in a quadcopter
@@ -62,7 +62,7 @@ The main components of a robot can be divided into five essential categories:
     \subsection{Physical components}
         \textbf{Sensors}: Allow robots to perceive both their environment and internal states, using sensors like cameras and LiDAR or IMUs.
 
-        \textbf{Actuators}: Enable the robot to move or perform tasks by converting control signals into physical motion.
+        \textbf{Actuators}: Enable the robot to move or perform missions by converting control signals into physical motion.
         Examples include motors, servos, robotic arms, and wheels.
 
         \textbf{Power Supply}: Provides the energy needed to operate the sensors, actuators, and processing unit.
@@ -75,7 +75,7 @@ The main components of a robot can be divided into five essential categories:
         \textbf{Controller (Processing Unit)}: The "brain" of the robot that processes sensor inputs, makes decisions, and sends commands to actuators.
         Examples include microcontrollers, processors, and embedded systems.
 
-        \textbf{Goals} A goal in robotics refers to a desired outcome or end state that a robot aims to achieve through its actions. Unlike tasks, goals are typically long-term and result-oriented, requiring the robot to plan, adapt, and choose appropriate tasks to reach the desired objective. Goals can be static or dynamic, depending on environmental changes or new information. In autonomous systems, goals often drive decision-making by determining which tasks to prioritize and how to allocate resources. In cognitive architectures, goal management is critical for enabling goal-directed behavior and learning from experience.
+        \textbf{Missions} A mission in robotics refers to a desired outcome or end state that a robot aims to achieve through its actions. Unlike missions, missions are typically long-term and result-oriented, requiring the robot to plan, adapt, and choose appropriate missions to reach the desired objective. Missions can be static or dynamic, depending on environmental changes or new information. In autonomous systems, missions often drive decision-making by determining which missions to prioritize and how to allocate resources. In cognitive architectures, mission management is critical for enabling mission-directed behavior and learning from experience.
         
 
 
@@ -87,7 +87,7 @@ The main components of a robot can be divided into five essential categories:
 
     \subsection{Intelligent Robots:} These robots are capable of perceiving their environment, reasoning, and making decisions autonomously, often using AI techniques like machine learning. Examples include humanoid robots, autonomous vehicles, or drones with adaptive navigation systems. 
 
-        \textbf{Cognitive Robots:} A subset of intelligent robots, cognitive robots are designed to mimic human-like cognitive processes, such as reasoning, problem-solving, memory, and understanding intentions. They focus on emulating human intelligence and are often used for tasks requiring higher-order reasoning and natural interaction, such as social robots like Pepper. 
+        \textbf{Cognitive Robots:} A subset of intelligent robots, cognitive robots are designed to mimic human-like cognitive processes, such as reasoning, problem-solving, memory, and understanding intentions. They focus on emulating human intelligence and are often used for missions requiring higher-order reasoning and natural interaction, such as social robots like Pepper.
 
         \textbf{Cognitive dynamic robots}
 
@@ -111,12 +111,12 @@ The main components of a robot can be divided into five essential categories:
             \item Is relating current sensor data with previous control inputs to solve problem a kind of state estimation?
         \end{itemize}
     
-\section{Goal}
+\section{Mission}
     \todo{This part must go under sense-plan-action cycle}
     \paragraph{Homestatis and survival}
-        Somehow must prove that without having a surviavl goal self aware ness is not possible
+        Somehow must prove that without having a surviavl mission self aware ness is not possible
         
-        The survival final goal is the only effort that turns a robots attention to itself.
+        The survival final mission is the only effort that turns a robots attention to itself.
         
         Obeying the human ruler is one surviavl skill because the human ruler may kill the robot
 
@@ -173,5 +173,5 @@ The main components of a robot can be divided into five essential categories:
     
 \section{Quadcopter}
     \subsection{Homeostatis}
-    This could be considered as the final goal of a robot. Even a robot which follows its human master, it is better to be regarded as something that follows its master orders in order not to be destroyed by it
+    This could be considered as the final mission of a robot. Even a robot which follows its human master, it is better to be regarded as something that follows its master orders in order not to be destroyed by it
     This will be very intresting. A flying quadcopter is very prone to crashing. That is why it is a very good subject for self-awarness studies
