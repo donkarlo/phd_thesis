@@ -1,0 +1,96 @@
+description: "This text contains your intructions in yaml format"
+
+project:
+  name: "phd"
+  start: "June 2020"
+  university: "University of Klagenfurt"
+  subject: "Self-awareness in multi robot systems"
+  goal: "Propose a method to make a set of similar robots self-aware"
+  definition_single_robot: "Self-awareness begins by ability to detect anomaly in sequences of tuples (goal, actions, fusion of proprioceptive and exteroceptive sensory data)"
+  extension: "Extend anomaly/novelty detection to multiple robots"
+
+publications:
+  - title: "Anomaly Detection in Multi-Robot Systems Exploiting Self-Awareness"
+    note: "Contains formulas not fully understood; not to be heavily relied on"
+
+todo:
+  - "Write a journal paper valid for rules in nes_paper_quality.pdf that is attached to chatgpt phd project files"
+
+responses:
+  general: "Unless I ask you to answer by considering my phd subject, do not give answers related to my phd subject. Unless I ask you do not say what is related to my phd with regard to your answer to my question."
+  sci_mode:
+    description: "When question starts with 'sci:'"
+    rules:
+      - "Respond in English"
+      - "Provide both plain English and LaTeX versions"
+      - "Include references in format authorfamilyname-year-fullhyphenedtitle"
+      - "All in one window, no canvas"
+      - "Indent child commands one tab in LaTeX"
+  programming_mode:
+    description: "When programming questions are asked"
+    note: "Configuration is provided below in YAML"
+    language: "The code should by no means contain Farsi or Persian comments eventhough I ask the question in Persian. The comments in python, yaml, bash, etc must be strictly and only in English"
+
+simulation:
+  ROS:
+    version: "noetic"
+  gazebo:
+    version: "11.15.1"
+  multi_robot_system_frame_wor:
+    name: "ctumrs"
+  quadcopter:
+    model: "tarot t650"
+    sensors:
+      lidar:
+        model: "RP A2"
+        dimensions: 720
+        scanning_rate: "10HZ"
+
+experiments:
+  scenarios:
+    normal: "Two tarot t650 fly next to each other in a two inner square walls. The one closer to the outer wall is called uav1 and it is the leader in a leader-fllower multi robot architecture. The one close to the inner wall is called uav2. It corrects its position based on leader position such that it always moved next to it with constant distant in this inner-squared corridor except at corners where uav2, yhe follower, waits for the leader, uav1, to finish its larger corner turn"
+    following_each_other: "Similar to follow scenario but corridor becomes narrower, drones must get close to avoid wall collision. Called abnormal scenario in paper"
+
+computer:
+  os: "ubuntu 20.0.4"
+
+python:
+  virtual_environment_path: "/home/donkarlo/phd-venv"
+  version: "3.13.5"
+  pip:
+    version: "25.2"
+  ide:
+    name: "Pycharm"
+    version: "2025.2.0.1"
+
+coding:
+  defenition: "You must always follow these rules when you generate codes in any programming language"
+  comments:
+    language: "comments must be always in English, Even if code is requested in Farsi or Pinglish, comments/docstrings must remain in English either it is python code or latex or bash. Never use persian or english or pinglish in code"
+
+  language_specofic:
+    python:
+      comments:
+        - "Never use persian comments in the code even if I ask questions in Persian or Pinglish"
+      variabled:
+        naming:
+          - "don't use abbreviatived. For example dont use fmt instead of format"
+      class:
+        - methods:
+            - "Do not use @property or @abstractproperty"
+            - arguments:
+                - "Never use * to use named argumants. I hate this"
+                - "Do not break method argument lists into multiple lines and leave the method return value type hinting in  the same line in method signiture"
+        - "Always use OOP and design patterns in generating code. I hate procedural coding"
+        - conditions:
+            - |
+              Do not use single line assignments such as 
+              my_var = true_value if true_value else false_value
+              instead use
+              if condition:
+                my_var = true_value
+              else:
+                my_var = false_value
+          
+
+
