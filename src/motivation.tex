@@ -1,0 +1,73 @@
+\documentclass[a4paper]{article}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage{minted}
+\usepackage{multirow}
+
+\usepackage{enumitem}
+\setlistdepth{9}
+\renewlist{itemize}{itemize}{9}
+\setlist[itemize,1]{label=\textbullet}
+\setlist[itemize,2]{label=--}
+\setlist[itemize,3]{label=*}
+\setlist[itemize,4]{label=\(\cdot\)}
+\setlist[itemize,5]{label=\(\circ\)}
+\setlist[itemize,6]{label=\(\triangleright\)}
+\setlist[itemize,7]{label=\(\diamond\)}
+\setlist[itemize,8]{label=\(\star\)}
+\setlist[itemize,9]{label=\(\ast\)}
+
+\usepackage{todonotes}
+
+\title{Motivation}
+\date{}
+
+\begin{document}
+    \maketitle
+    
+    Proposing a cognitive framework for a robot and then extend it to a multi-robot system.
+    
+    A complete cognitive framework must include cognitive processes such as:
+    \begin{itemize}
+        \item Memory
+        \begin{itemize}
+            \item Explicit
+            \begin{itemize}
+                \item Long-term
+                \begin{itemize}
+                    \item Episodic
+                    \begin{itemize}
+                        \item Autobiographic
+                        \begin{itemize}
+                            \item Event-specific knowledge
+                        \end{itemize}
+                    \end{itemize}
+                \end{itemize}
+            \end{itemize}
+            \item Implicit
+            \begin{itemize}
+                \item Working
+                \item Repetition priming
+            \end{itemize}
+        \end{itemize}
+        \item Perception
+        \item Attention
+        \item Thinking
+            \begin{itemize}
+                \item Decision making
+                    \begin{itemize}
+                        \item planning
+                    \end{itemize}
+                \item Problem solving
+                \item Reasoning
+                \item Concept formation
+            \end{itemize}
+        \item Learning
+    \end{itemize}
+    
+    \todo[inline]{Todo:
+    Find the simplest definition of self-awareness in MRS (current: an MRS that detects novelty better is more self-aware).
+    Introduce an existing method and the proposed method.
+    Provide evidence the proposed method performs better.}
+\end{document}
