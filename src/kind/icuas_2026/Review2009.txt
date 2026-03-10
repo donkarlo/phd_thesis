@@ -1,0 +1,12 @@
+Reviewer 1 of ICUAS'23 submission 97
+
+Comments to the author
+======================
+
+The problem is challenging to solve. The multi-robot
+setting makes sense, however, you treat UAVs as points!!!
+Thus, the applicability / implementation of the approach is
+questionable.
+
+Noted, that the method, mathematically, makes sense,
+however, lack of realistic results raises issues.

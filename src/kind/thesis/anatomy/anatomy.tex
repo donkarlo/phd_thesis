@@ -1,0 +1,45 @@
+\documentclass[a4paper]{article}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage{minted}
+\usepackage{multirow}
+
+\usepackage[pdf]{graphviz}
+\usepackage{tikz}
+\usetikzlibrary{graphs,graphdrawing}
+\usegdlibrary{layered}
+
+\usepackage{forest}
+
+\title{Proposed anatomy}
+\date{}
+\begin{document}
+    \maketitle
+    \begin{forest}
+        for tree={
+            edge={->}
+        }
+        [Robot
+            [Mind
+                [Consciousness
+                    [Self-consciousness
+                        [Meta Cognition
+                            [Self-awareness
+                                [Body]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+            [Body
+                [Nervous system
+                    [Central]
+                    [Peripheral]
+                ]
+            ]
+        ]
+    \end{forest}
+%        \bibliographystyle{plain}
+%        \bibliography{/home/donkarlo/Dropbox/repo/nd_shared_research/bibliography/bibliography.bib}
+\end{document}

@@ -1,0 +1,18 @@
+\documentclass[a4paper]{article}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage{minted}
+\usepackage{multirow}
+
+\title{Experiments}
+\date{}
+\begin{document}
+    \maketitle
+    \input{conparative/condition/condition}
+    \input{kind/transformer/gaussian/vanilla/vanilla}
+    \input{kind/transformer/gaussian/with_transformer_and_kf}
+    \input{kind/transformer/gaussian/with_clustering_and_tranformer}
+    \input{kind/transformer/gaussian/with_clustering_and_transformer_and_kf}
+    \input{kind/transformer/gaussian/with_clustering_transformer_kf_and_pf}
+\end{document}

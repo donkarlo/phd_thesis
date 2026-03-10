@@ -1,0 +1,48 @@
+\documentclass[a4paper]{article}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage{minted}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{forest}
+
+\title{Results template}
+\date{}
+
+\begin{document}
+    \maketitle
+    Novelty detection
+    
+    \section{Definition of a descripancy}
+    mention the three types of descripancy
+    
+    
+    \section{Threshold}
+    
+        \begin{forest}
+            for tree={
+                draw,
+                edge={->}
+            }
+            [running the discrepency detection once for the learning experiment
+                [ Computing variance and $\mu \pm n\times\sigma$
+                    [ running the learning experiment again
+                        [computing the timestep-wise discrepency values]
+                    ]
+                ]
+            ]
+        \end{forest}
+    
+    running
+    Comparing computed anomaly value with
+    
+    
+    \section{Novelty detection}
+    We know novelty should happen from timestep $t_1$ to $t_2$.
+    
+    
+    
+    % \bibliographystyle{plain}
+    % \bibliography{/home/donkarlo/Dropbox/repo/shared_research/bibliography/bibliography.bib}
+\end{document}

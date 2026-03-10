@@ -1,0 +1,69 @@
+Reviewer 2 of ICUAS'23 submission 97
+
+Comments to the author
+======================
+
+This paper explores the extension of anomaly detection
+using hierarchical dynamic Bayesian networks (DBNs) to
+multi-robot systems. The extension is evaluated in
+simulation and the effect of cluster size and noise is
+shown.
+
+The contributions of this work seem to be minor as far as I
+can tell, since the main theoretical part of the use of
+hierarchical DBNs for anomaly detection has been covered
+previously. I have trouble seeing how the proposed
+extension to multi-robot systems is different from simply
+grouping the individual robots DBNs on a higher level. The
+advantage of having this added level of hierarchy does not
+become clear to me. 
+
+The simulation study is a nice addition and varying cluster
+size and noise parameters gives some valuable insights. I
+recommend you give more space to these results and discuss
+the implications. How should one chose the number of
+clusters? What should we be careful of when working with
+larger noise? What trade-offs have to be made when choosing
+parameters?
+
+I'd also like to note that as far as I can tell, most of
+the paper focuses on an explanation of the use of
+hierarchical DBNs for anomaly detection and little time is
+spent on the actual contributions. While the distinction
+between proprioceptive and exteroceptive observations is
+given as a distinguishing aspect of this work, I could not
+identify how these were treated differently, nor why it
+would be beneficial to do so. 
+
+The language use seems quite cryptic and convoluted to me,
+so it is very much possible that I missed part of the
+explanation of your contributions or other intricacies of
+your work, and for this I am sorry. I would however
+recommend that you try and simplify the language to make
+sure that doesn't happen to your other readers. I know that
+in the scientific community we have a tendency to use
+language that is difficult to understand (excessive use of
+passive voice,
+nominalizitions, etc.) and sometimes that can cause
+misunderstandings. 
+As an example from this paper, I'd like to refer to this
+sentence from the "related work" section,
+"They build temporal relations between the states according
+to the data derived during initialization and consequently,
+in a new experience, they update the posterior probability
+of agent state space based on this observation", which as
+far as I can tell means: "They propagate their previous
+state estimate using a system model and correct this
+prediction using the latest measurements".
+
+As a final remark, I recommend the authors improve the
+figures, especially the plots in figures 5-8:
+- add axis labels & units
+- chose more consistent tick markers on the y axis. Ideally
+same range for same plots, if the ranges are too different,
+at least use the same number of ticks and similar precision
+- increase distance between subplots, such that axis labels
+and titles are clearly distinguishable
+- For the position plots, I recommend using a 1:1 aspect
+ratio
+- Use vector graphics & increase the font-size

@@ -1,0 +1,72 @@
+\documentclass[a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage{minted}
+\usepackage{multirow}
+\usepackage{comment}
+\usepackage{float}
+
+\title{Experiment conditions setup}
+\author{}
+\date{}
+
+\begin{document}
+    \maketitle
+    This part provides a template for describing the condition under which the experiment was done.
+    
+    \section{Robots}
+        
+        \subsection{UAVs}
+            Tarrot T650, Oldest
+            
+            \subsubsection{Sensors}
+                % to find frequencies, run /home/donkarlo/Dropbox/repo/nd_robotic_project/src/nd_robotic_ai/platform/ros/message/message_frequency_finder.py
+                
+                \paragraph{GPS}
+                \begin{itemize}
+                    \item \textbf{Frequency:} 83.33 Hz
+                \end{itemize}
+                
+                \paragraph{LIDAR}
+                \begin{itemize}
+                    \item \textbf{Frequency:} 20.83 Hz
+                \end{itemize}
+            
+            \subsubsection{Homegeonity}
+                Homogenous
+            
+            \subsubsection{Dependency}
+                Leader-Followers
+        
+        \subsection{World}
+            The world is simulated by Gazebo and the robot simulation is done by ROS.
+        
+        \subsection{Human}
+    
+    
+    \section{Condition}
+        
+        \subsection{Normal condition}
+            \subsubsection{Affordance} 
+                \paragraph{Environment}
+                    A square corridor like the image bellow
+                \paragraph{Maneuver}
+                    The two drones keep the same distance (Goal, keeping the same distance as much as possible) while turning around the square corridor
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=0.9\textwidth]{normal.png}
+            \end{figure}
+        
+        \subsection{Follow condition}
+            \subsubsection{Affordance}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=0.9\textwidth]{follow.png}
+            \end{figure}
+        
+        \subsection{Next to}
+            % not implemented in previous paper
+
+\end{document}

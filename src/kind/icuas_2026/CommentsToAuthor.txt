@@ -1,0 +1,15 @@
+Comments to author (Associate Editor)
+=====================================
+
+The reviewers see the potential for this work, but find the
+current version of the article insufficient for publication
+at ICUAS. Main points for improvement are the description
+of the method, explanation of its usefulness, and
+application to more real-world scenarios, ideally on real
+robotic platforms.
+
+
+----------------------------------------
+Comments on Video Demonstration:
+
+[None found]

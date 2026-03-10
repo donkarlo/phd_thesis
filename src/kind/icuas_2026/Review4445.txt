@@ -1,0 +1,51 @@
+Reviewer 7 of ICUAS'23 submission 97
+
+Comments to the author
+======================
+
+The authors present a Hierarchical DBN method for surprise
+detection, involving the coupled (proprio- / exteroceptive)
+sensor measurements of multiple drones. Learning in one
+scenario (e.g., open corridors) and then testing in another
+(e.g., with a closed corridor) will lead to anomaly
+detection.
+
+The ideas underlying the work are nice, and I think it is
+especially recommendable that the authors have given a
+concrete implementation to an anomaly prediction framework.
+
+I have a number of concerns however that if addressed would
+hopefully add to the validity and impact of the work:
+
+1. It is not clear what actions the drones should take when
+an anomaly is detected. Also, it is not clear what
+threshold should be used (see Fig 6 for very varying
+magnitudes on the y-axes).
+
+2. The study involves two simulated scenarios, which is
+very little. One would like to get an insight into how
+useful this is in practice. This would require far more
+experiments. For instance, what if the training set
+contains 100 or more open corridor sets, and the test set
+has a mixture of different environments, some with open
+corridors, others with deviating properties. This scale of
+experiments, even when performed in simulation, would make
+a much more convincing example. It would also give more
+insight in false positive and false negatives of this
+approach.
+
+3. The methodology is not very clear. For instance, how are
+the continuous state and discrete state (after clustering)
+exactly coupled in filtering? How are the transitions
+between states learned offline? 
+
+4. The central results show "anomaly" values - but I don't
+find the defintion. I guess with a hierarchical DBN, one
+should find probabilities of a sequence of observations
+happening, but this is not explained or analyzed.
+
+5. The coupling of sensor states between agents does not
+seem very scalable... With S states and N agents, the D set
+would have magnitude S^N... Is this approach fundamentally
+scalable? The joint observations in this high-dimensional
+space would be extremely sparse...
