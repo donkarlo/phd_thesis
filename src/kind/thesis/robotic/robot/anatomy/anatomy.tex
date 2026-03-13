@@ -1,0 +1,82 @@
+\documentclass[border=5pt]{standalone}
+\usepackage{forest}
+\usepackage{xcolor}
+
+\begin{document}
+\begin{forest}
+for tree={
+    edge={<-},
+    align=center
+}
+[Robot
+    [Mind
+        [Cognition
+            [Object\\level
+                [Processes
+                    [Memory
+                        [Explicit
+                            [Long-term
+                                [Episodic
+                                    [Autobiographical
+                                        [Event-specific\\knowledge]
+                                        [Lifetime]
+                                        [General\\events]
+                                    ]
+                                ]
+                            ]
+                        ]
+                        [Implicit
+                            [Skills\\(Procedural)]
+                            [Repetition\\priming]
+                        ]
+                    ]
+                    [Attention]
+                    [Perception]
+                    [Thinking]
+                    [Learning]
+                    [Language]
+                ]
+            ]
+            [Meta cognition
+                [Self-consciousness
+                    [Self-awareness
+                        [Body\\awareness]
+                    ]
+                ]
+                [Self-monitoring]
+                [Self-evaluation]
+                [Self-regulation]
+            ]
+        ]
+        [Psyche
+            % This is the whole realm of mind. That is concious and unconcious
+            [Consciousness]% some cognitive processes are concious some are unconcious
+            [Unconsciousness]
+        ]
+    ]
+    [Body
+        [Nervous\\system
+            [Nerve]
+            [Neuron,
+                l sep=18mm
+                [Sensory, edge label={node[midway, fill=white]{is-a}}]
+                [Motor, edge label={node[midway, fill=white]{is-a}}]
+                [Interneuron, edge label={node[midway, fill=white]{is-a}}]
+            ]
+            [Central
+                [Brain\\(CPU/FCU)]
+                [Retina\\(GPU)]
+                [Spinal cord\\(BUS)]
+            ]
+            [Peripheral
+                [Autonomic]
+                [Enteric]
+                [Somatic]
+            ]
+        ]
+        [Limb\\(Actuator)]
+        [Organ\\(Link)]
+    ]
+]
+\end{forest}
+\end{document}
